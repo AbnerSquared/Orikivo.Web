@@ -70,13 +70,13 @@ class module
         var _displayOff = "none";
         moduleHeader.onclick = function()
         {
-            if(moduleCommands.style.display == _displayOn)
+            if(moduleCommands.style.display == _displayOff)
             {
-                moduleCommands.style.display = _displayOff;
+                moduleCommands.style.display = _displayOn;
             }
             else
             {
-                moduleCommands.style.display = _displayOn;
+                moduleCommands.style.display = _displayOff;
             }
         };
 
@@ -249,7 +249,14 @@ class parameter
         argType.className = 'parameter-type';
         argType.innerText = this.type;
 
+        var argTypeBubble = document.createElement('span');
+        argTypeBubble.className = 'parameter-type-bubble';
+
+        // use this upon the bubble being clicked
+        //https://docs.microsoft.com/en-us/dotnet/api/system.string
+
         argInfo.appendChild(argName);
+        argInfo.appendChild(argTypeBubble);
         argInfo.appendChild(argType);
         
         if (this.summary != null)
@@ -316,6 +323,19 @@ var modules =
 
 window.onload = function()
 {
+    var _navBar = document.getElementById("nav-bar");
+    document.getElementById("nav-toggle").onclick = function()
+    {
+        if (_navBar.style.display == 'inline-block')
+        {
+            _navBar.style.display = 'none';
+        }
+        else
+        {
+            _navBar.style.display = 'inline-block';
+        }
+    };
+    
     modules.forEach(function(_module)
     {
         // add the module info to the main info box.

@@ -2,18 +2,20 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="newstyle.css">
+        <script src="buttonRoute.js"></script>
     </head>
     <body>
         <div class="side-header">
             <div class="header">
-                <div class="logo">
+                <div id="nav-toggle" class="logo">
                     <div id="title">orikivo</div>
                     <div id="flair">ORIKIVO</div>
                 </div>
-                <div class="nav-bar">
-                    <div class="nav-button">home</div>
+                <div id="nav-bar" class="nav-bar">
+                    <div class="current-nav-button">home</div>
                     <div class="gradient-box"></div>
-                    <a class="nav-button" href="sub/commands.html">commands</a>
+                    <div class="nav-button"><a href="sub/commands.html">commands</a></div>
+                    <div class="gradient-box"></div>
                 </div>
                 <div class="gradient-box"></div>
             </div>
@@ -22,7 +24,6 @@
             </div>
         </div>
         <div class="side-content">
-            <div class="nav-bar-padding"></div>
             <div class="content-header">limitations are confined by imagination.</div>
             <div class="content-paragraph">
                 Orikivo is a personal project that originally started as a joke. However, due to my lack of self-control, it has expanded to an ever so thriving system that aims to become a fully dynamic adventure that anyone is free to partake in.
