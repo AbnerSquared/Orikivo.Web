@@ -16,6 +16,11 @@
     --default-margin: 0.5rem;
 }
 
+a
+{
+    text-decoration: none;
+}
+
 body
 {
     cursor: default;
@@ -52,6 +57,21 @@ body
 ::-webkit-scrollbar-corner
 {
     background: var(--color1);
+}
+
+.content-header
+{
+    text-align: center;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: 24px;
+}
+.content-paragraph
+{
+    text-align: center;
+    font-family: 'M PLUS Rounded 1c';
+    font-weight: bold;
+    font-size: 18px;
 }
 
 
@@ -121,7 +141,7 @@ height: 100%;
 }
 .nav-bar-padding
 {
-    padding-top: 48.78px;
+    padding-top: 99px;
     display: block;
 }
 
@@ -257,7 +277,7 @@ height: 100%;
 .module-pointer
 {
     background: transparent;
-    height: 48.78px;
+    height: 99px; /*48.78px*/
     width: 100%;
     display: block;
 }
