@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:300,400,600|Source+Sans+Pro:300,400,700|Comfortaa:300,400,700|Quicksand|Libre+Barcode+39&subset=japanese');
+
+
+:root
+{
+    --color1: rgb(110, 250, 200);
+    --color2: rgb(96, 226, 185);  
+    --color3: rgb(82, 202, 170);  
+    --color4: rgb(68,178,155);    
+    --color5: rgb(54, 154, 140);  
+    --color6: rgb(40, 130, 125);  
+    --color7: rgb(26, 106, 110);  
+    --color8: rgb(12, 82, 95);
+
+    --small-margin: 0.25rem;
+    --default-margin: 0.5rem;
+}
+
+body
+{
+    cursor: default;
+    background: var(--color8);
+    color: var(--color1);
+    font-family: "Comfortaa";
+    font-size: 2rem;
+    margin: 0;
+}
+
+::-webkit-scrollbar
+{
+    width: 0.25rem;
+    height: 0.25rem;
+}
+
+::-webkit-scrollbar-track
+{
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: var(--color4);
+    transition-duration: 0.2s;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+    background: var(--color1);
+    transition-duration: 0.2s;
+}
+
+::-webkit-scrollbar-corner
+{
+    background: var(--color1);
+}
+
+
+.header
+{
+    cursor: pointer;
+    float: left;
+    background: var(--color7);
+    width: 9rem;
+    height: fit-content;
+    position: absolute;
+    display: block;
+    padding: 0.5rem;
+    user-select: none;
+}
+
+#paragraph
+{
+    font-family: 'M PLUS Rounded 1c';
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+ul
+{
+    text-decoration: none;
+    list-style: none;
+}
+
+.side-header
+{
+background: var(--color8);
+display: block;
+z-index: 1;
+position: fixed;
+padding-right: 0.5rem;
+width: 10rem;
+height: 100%;
+}
+
+.header-list
+{
+    color: var(--color1);
+    background: linear-gradient(180deg, var(--color7), var(--color8));
+    transition: 0s;
+    width: inherit;
+    height: inherit;
+    font-size: 1.25rem;
+    font-family: 'M PLUS Rounded 1c';
+    float: left;
+    font-weight: bold;
+    display: block;
+    padding: 99px 0.5rem 0.5rem 0.5rem;
+    box-sizing: border-box;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.side-header-padding
+{
+    padding-left: 10.5rem;
+    background: transparent;
+    height: 100vh;
+    display: block;
+    float: left;
+}
+.nav-bar-padding
+{
+    padding-top: 48.78px;
+    display: block;
+}
+
+.side-content
+{
+    box-sizing: border-box;
+    width: -webkit-fill-available;
+    min-width: 438px;
+    height: 100%;
+    display: inline-block;
+    padding: 0.5rem 0.5rem 0.5rem 11rem;
+    margin-right: 0.5rem;
+    background: var(--color7);
+
+}
+
+.hover-gradient-box
+{
+    display: block;
+    background: linear-gradient(180deg, var(--color8), transparent);
+    margin-top: 99px;
+    width: inherit;
+    position: absolute;
+    padding-top: 1rem;
+}
+
+.side-gradient-box
+{
+    display: block;
+    background: linear-gradient(270deg, var(--color8), transparent);
+    margin-left: 10rem;
+    height: 100%;
+    position: absolute;
+    padding-top: 1rem;
+}
+
+.gradient-box
+{
+    background: linear-gradient(180deg, var(--color8), transparent);
+    margin-top: 0.25rem;
+    padding-top: 0.5rem;
+}
+
+.nav-bar .gradient-box
+{
+    margin-top: 0rem;
+}
+
+.header-list li
+{
+    display: inline-block;
+    width: 100%;
+    color: var(--color1);
+    border-left: 0rem solid transparent;
+    background: transparent;
+    padding-left: 0rem;
+    transition: 0.2s;
+}
+
+.header-list li:hover
+{
+    cursor: pointer;
+    border-left: 0.25rem solid rgba(110, 250, 200, 100);
+    background: linear-gradient(90deg, var(--color4), transparent);
+    font-weight: bolder;
+    padding-left: 0.25rem;
+    transition: 0.2s;
+}
+
+.light-clear-box
+{
+    font-family: "Comfortaa";
+    font-weight: bolder;
+    background: rgb(26, 106, 110);
+    padding: 0.5rem;
+}
+.light-clear-box-border-wrap
+{
+    float: left;
+    display: block;
+    position: relative;
+    background: linear-gradient(90deg, var(--color1), var(--color7));
+    padding: 0.2rem;
+}
+.light-clear-box-border-wrap-left
+{
+    float: left;
+    display: block;
+    position: relative;
+    background: linear-gradient(270deg, var(--color1), var(--color7));
+    padding: 0.2rem;
+}
+.light-clear-border-wrap
+{
+    float: left;
+    display: block;
+    position: relative;
+    background: var(--color7);
+    padding: 0.2rem;
+}
+
+.logo-border-wrap
+{
+    float: left;
+    display: block;
+    border-radius: 0rem;
+    position: relative;
+    background: var(--color1);
+    padding: 0.2rem;
+}
+.logo
+{
+    position: initial;
+    float: left;
+    display: block;
+    width: 7.5rem;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    text-align: center;
+    border: 0.25rem solid var(--color1);
+    color: var(--color1);
+    height: auto;
+}
+.logo #title
+{
+    font-family: 'Comfortaa';
+    font-weight: bold;
+}
+.logo #flair
+{
+    font-family: 'Libre Barcode 39';
+}
+
+.module-pointer
+{
+    background: transparent;
+    height: 48.78px;
+    width: 100%;
+    display: block;
+}
+
+.module-header
+{
+    cursor: pointer;
+    font-size: 1.2rem;
+    float: left;
+    display: block;
+    width: fit-content;
+    margin-right: 0.25rem;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    text-align: center;
+    border: 0.25rem solid var(--color1);
+    color: var(--color1);
+    height: auto;
+    user-select: none;
+}
+
+.module-header #title
+{
+    font-family: 'Comfortaa';
+    padding-bottom: 0.25rem;
+    font-weight: bold;
+}
+
+.module-header #flair
+{
+    font-size: 1.4rem;
+    font-family: 'Libre Barcode 39';
+}
+
+.margin
+{
+    margin: 0.5rem;
+}
+
+#title
+{
+    font-family: 'Comfortaa';
+    font-weight: bold;
+}
+
+.nav-bar
+{
+    position: absolute;
+    display: inline-block;
+    padding-left: 0.5rem;
+}
+
+.nav-button
+{
+    background: var(--color1);
+    color: var(--color8);
+    font-family: 'Quicksand';
+    font-size: 1rem;
+    width: auto;
+    font-weight: bold;
+    padding: 0.4rem;
+    height: 100%;
+}
+
+.module
+{
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+.module-summary
+{
+    position: relative;
+    height: auto;
+    border-left: 0.25rem solid;
+    width: -webkit-fill-available;
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+    padding-left: 0.5rem;
+    font-family: 'Source Sans Pro';
+    text-align: left;
+    display: inline-block;
+}
+
+.module-commands
+{
+    float: left;
+    display: block;
+    box-sizing: border-box;
+    width: auto;
+}
+
+.module-command
+{
+    cursor: pointer;
+    box-sizing: border-box;
+    display: inline-block;
+    width: auto;
+    margin-top: 0.25rem;
+    margin-right: 0.25rem;
+    color: var(--color8);
+    background: var(--color1);
+    font-family: 'Quicksand';
+    font-weight: bold;
+    padding: 0.25rem;
+    font-size: 1.1rem;
+}
+
+.module-info
+{
+    box-sizing: border-box;
+    background: var(--color8);
+    width: 100%;
+    padding: 0.25rem;
+    display: inline-block;
+}
+
+.module-data
+{
+    padding: 0.5rem;
+    background: var(--color6);
+    box-shadow: 0 0.25rem var(--color8);
+}
+.command-info-border
+{
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, var(--color7), var(--color8));
+    padding: 0.25rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+.command-info-border::after
+{
+    background-image: linear-gradient(90deg, var(--color8), var(--color7));
+    box-sizing: unset;
+    float: left;
+    width: inherit;
+    height: 0.25rem;
+    margin-top: 0.25rem;
+    content: no-close-quote;
+}
+
+.command-parameter
+{
+    cursor: pointer;
+    user-select: none;
+    font-weight: normal;
+    transition: 0.2s;
+}
+
+.command-parameter:hover
+{
+    cursor: pointer;
+    user-select: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.command-aliases
+{
+    font-size: 18px;
+}
+
+.parameter-info
+{
+    display: none;
+    box-sizing: border-box;
+    background: var(--color5);
+    padding: 0.5rem;
+    width: 100%;
+    font-family: 'M PLUS Rounded 1c';
+}
+
+.command-info
+{
+    display: block;
+    box-sizing: border-box;
+    background: var(--color6);
+    padding: 0.5rem;
+    width: 100%;
+    font-family: 'M PLUS Rounded 1c';
+}
+
+.command-syntax
+{
+    font-size: 24px;
+}
+
+.command-summary
+{
+    font-size: 14px;
+}
