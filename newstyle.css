@@ -52,7 +52,7 @@ body
     text-orientation: upright;
     text-rendering: optimizeLegibility;
 
-    font-family: var(--bodyFont);
+    font-family: var(--body-font);
     font-size: var(--default-text);
     margin: 0;
 }
@@ -144,7 +144,9 @@ body
 .side-content
 {
     box-sizing: border-box;
+    width: 100%;
     width: -webkit-fill-available;
+    width: -moz-available;
     min-width: 438px;
     height: 100%;
     display: inline-block;
