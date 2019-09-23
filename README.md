@@ -1,2 +1,2 @@
 # Orikivo.Web
-Basic website structure used for: https://abnersquared.github.io/orikivo-web/
+Basic website structure used for: <https://abnersquared.github.io/Orikivo.Web/>

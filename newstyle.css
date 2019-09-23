@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:300,400,600|Source+Sans+Pro:300,400,700|Comfortaa:300,400,700|Quicksand|Libre+Barcode+39&subset=japanese');
 
-
 :root
 {
     --color1: rgb(110, 250, 200);
@@ -536,6 +535,7 @@ body
 
 .left-container #title
 {
+    text-align: center;
     font-family: var(--header-font);
     font-size: var(--logo-text);
     background: linear-gradient(90deg, var(--color6), transparent);
@@ -568,18 +568,9 @@ body
     width: 100%;
 }
 
-.right-container
-{
-    
-}
-.right-container #title
-{
-
-}
-.right-container #paragraph
-{
-
-}
+.right-container {}
+.right-container #title {}
+.right-container #paragraph {}
 .right-container #image
 {
     float: left;
