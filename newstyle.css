@@ -128,7 +128,7 @@ body
 
 .side-header-padding
 {
-    padding-left: 1var(--default-width);
+    padding-left: 1 var(--default-width);
     background: transparent;
     height: 100vh;
     display: block;
