@@ -1,59 +1,8 @@
-// InfoHandler
-
-// stores all html formatting functions needed.
-class HtmlFormat
-{
-    static Bold(content)
-    {
-        return `<b>${content}</b>`;
-    }
-}
-
-// This handles information objects derived from Orikivo.
-
-//var GenericClasses = { FixedBody: "fixed-body" };
 var ClassTags = {
     Module: "module",
     Command: "command",
-    CommandTable: "command-table", // the list of commands, shown by only name.
     Arg: "arg"
 };
-// var ClassIds = {};
-
-var main = document.getElementById("side-content");
-var list = document.getElementById("list");
-
-function createDiv(id = null, className = null, innerText = null)
-{
-    var div = document.createElement("div");
-    div.id = id;
-    div.className = className;
-    if (innerText != null)
-        div.innerText = innerText;
-    return div;
-}
-
-function createSpan(className = null, innerText = null)
-{
-    var span = document.createElement("span");
-    span.className = className;
-    if (innerText != null)
-        span.innerText = innerText;
-    return span;
-}
-
-function toggleElement(element)
-{
-    if (element.style.display == "none")
-        element.style.display = "block";
-    else
-        element.style.display = "none"; 
-}
-
-function scrollToElement(id)
-{
-    document.getElementById(id).scrollIntoView();
-}
 
 class Module
 {
@@ -137,7 +86,7 @@ class Command
         var commandSyntax = createDiv(null, "command-syntax");
 
         var commandName = createSpan("command-name");
-        commandName.innerHTML = HtmlFormat.Bold(this.name);
+        commandName.innerHTML = htmlBold(this.name);
 
         var commandParameterData = createDiv(null, "command-param-data");
 
@@ -258,7 +207,7 @@ class Arg
 }
 
 // the actual process starts here.
-var modules =
+const modules =
 [
     new Module("utility", "used to test commands", "dedicated to ensuring simplicity among advanced mechanics",
         new Array(
@@ -270,6 +219,10 @@ var modules =
         )
     )
 ];
+
+
+var main = document.getElementById("side-content");
+var list = document.getElementById("list");
 
 window.onload = function()
 {

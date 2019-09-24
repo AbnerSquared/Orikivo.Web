@@ -40,7 +40,8 @@
 ::-webkit-scrollbar-thumb:hover { background-color: var(--color1); transition-duration: var(--default-duration); }
 ::-webkit-scrollbar-corner { background-color: var(--color1); }
 
-a { text-decoration: none; }
+a { text-decoration: none; color:inherit; }
+a:active { color: inherit; }
 a:-webkit-any-link { display: block; color: inherit; cursor: pointer; }
 
 body
@@ -69,12 +70,13 @@ body
 
 .header
 {
-    font-family: var(--logoFont);
+    font-family: var(--logo-font);
     cursor: pointer;
     float: left;
     background: var(--color7);
     width: 9rem;
     height: fit-content;
+    height: -moz-fit-content;
     position: absolute;
     display: block;
     padding: var(--default-width);
@@ -113,11 +115,11 @@ body
     width: inherit;
     height: inherit;
     font-size: 1.25rem;
-    font-family: 'M PLUS Rounded 1c';
+    font-family: var(--logo-font);
     float: left;
     font-weight: bold;
     display: block;
-    padding: 99px var(--default-width) var(--default-width) var(--default-width);
+    padding: 115px var(--default-width) var(--default-width) var(--default-width);
     box-sizing: border-box;
 
     overflow-x: hidden;
@@ -136,7 +138,7 @@ body
 }
 .nav-bar-padding
 {
-    padding-top: 99px;
+    padding-top: 107px;
     display: block;
 }
 
@@ -160,6 +162,7 @@ body
 {
     box-sizing: border-box;
     width: -webkit-fill-available;
+    width: -moz-available;
     min-width: 438px;
     height: 100%;
     display: inline-block;
@@ -179,7 +182,7 @@ body
 {
     display: block;
     background: linear-gradient(180deg, var(--color8), transparent);
-    margin-top: 99px;
+    margin-top: 107px;
     width: inherit;
     position: absolute;
     padding-top: 1rem;
@@ -214,6 +217,8 @@ body
     background: transparent;
     border-left: 0rem solid transparent;
     padding-left: 0rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
     transition: var(--default-duration);
     width: 100%;
 }
@@ -230,6 +235,7 @@ body
 .centered-logo
 {
     box-align: center;
+    -moz-box-align: center;
     border: var(--small-width) solid var(--color1);
     color: var(--color1);
     display: block;
@@ -568,9 +574,6 @@ body
     width: 100%;
 }
 
-.right-container {}
-.right-container #title {}
-.right-container #paragraph {}
 .right-container #image
 {
     float: left;
