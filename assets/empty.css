@@ -1,0 +1,64 @@
+/* global empty css ruleset */
+@import "constants.css";
+
+/* global HTML element clear */
+a,abbr,acronym,address,applet,big,blockquote,body,caption,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,form,h1,h2,h3,h4,h5,h6,html,iframe,img,ins,kbd,label,legend,li,object,ol,p,pre,q,s,samp,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,tt,ul,var
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+p {
+    /*color: var(--col-min);*/
+}
+
+a {
+    /*color: var(--col-min);*/
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a img
+{
+    border: none;
+}
+
+body
+{
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: var(--col-max);
+    background: var(--col-min);
+    /*background: transparent;*/
+}
+
+code {}
+
+button
+{
+    border: 0;
+    cursor: pointer;
+}
+
+ol,ul
+{
+    list-style: none;
+}
+
+li
+{
+    list-style-type: none;
+
+}

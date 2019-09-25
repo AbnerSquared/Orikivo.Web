@@ -1,0 +1,11 @@
+make an extension for EmbedBuilder to allow
+.WithColor(UserStatus status)
+where the UserStatus would be the color of the
+status
+
+add DevTools to Orikivo.Web
+such as EmbedGenerator
+
+gather embed length constraints
+
+loading catcher to allow other elements to load in without looking out

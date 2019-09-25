@@ -1,0 +1,110 @@
+/* global constants used within css rulesets */
+
+.discordLight {
+    --header-primary: #060607;
+    --header-secondary: #4f5660;
+    --text-normal: #2e3338;
+    --text-muted: #747f8d;
+    --text-link: #0067e0;
+    --channels-default: #6a7480;
+    --interactive-normal: #4f5660;
+    --interactive-hover: #2e3338;
+    --interactive-active: #060607;
+    --interactive-muted: #c7ccd1;
+    --background-primary: #fff;
+    --background-secondary: #f2f3f5;
+    --background-tertiary: #e3e5e8;
+    --background-accent: #747f8d;
+    --background-floating: #fff;
+    --background-modifier-hover: rgba(116, 127, 141, 0.08);
+    --background-modifier-active: rgba(116, 127, 141, 0.16);
+    --background-modifier-select: rgba(116, 127, 141, 0.24);
+    --background-modifier-accent: rgba(6, 6, 7, 0.08);
+    --elevation-low: 0 1px 0 rgba(6, 6, 7, 0.1),
+        0 1.5px 0 rgba(6, 6, 7, 0.025),
+        0 2px 0 rgba(6, 6, 7, 0.025);
+    --elevation-high: 0 8px 16px rgba(0, 0, 0, 0.16);
+    --logo-primary: #7289da;
+    --guild-header-text-shadow: 0 1px 1px hsla(0, 0%, 100%, 0.4);
+    --channeltextarea-background: #ebedef;
+    --activity-card-background: #fff;
+}
+
+.discordDark {
+    --header-primary: #fff;
+    --header-secondary: #b9bbbe;
+    --text-normal: #dcddde;
+    --text-muted: #72767d;
+    --text-link: #00b0f4;
+    --channels-default: #8e9297;
+    --interactive-normal: #b9bbbe;
+    --interactive-hover: #dcddde;
+    --interactive-active: #fff;
+    --interactive-muted: #4f545c;
+    --background-primary: #36393f;
+    --background-secondary: #2f3136;
+    --background-tertiary: #202225;
+    --background-accent: #4f545c;
+    --background-floating: #18191c;
+    --background-modifier-hover: rgba(79, 84, 92, 0.16);
+    --background-modifier-active: rgba(79, 84, 92, 0.24);
+    --background-modifier-select: rgba(79, 84, 92, 0.32);
+    --background-modifier-accent: hsla(0, 0%, 100%, 0.06);
+    --elevation-low: 0 1px 0 rgba(4, 4, 5, 0.2),
+        0 1.5px 0 rgba(6, 6, 7, 0.05),
+        0 2px 0 rgba(4, 4, 5, 0.05);
+    --elevation-high: 0 8px 16px rgba(0, 0, 0, 0.24);
+    --logo-primary: #fff;
+    --guild-header-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+    --channeltextarea-background: #40444b;
+    --activity-card-background: #202225;
+}
+
+
+/*
+
+.theme-
+{
+    --col-max: #
+    --col-brighter: #
+    --col-bright: #
+    --col-standard: #
+    --col-standard-dim: #
+    --col-dim: #
+    --col-dimmer: #
+    --col-min: #
+}
+
+*/
+
+:root {
+    --col-max: #ffffff;
+    --col-brighter: #b6b6b6;
+    --col-standard: #929292;
+    --col-standard-dim: #6d6d6d;
+    --col-dim: #494949;
+    --col-dimmer: #242424;
+    --col-min: #000000;
+}
+
+.theme-origreen {
+    --col-max: #6efac8;
+    --col-brighter: #60e2b9;
+    --col-bright: #52caaa;
+    --col-standard: #44b29b;
+    --col-standard-dim: #369a8c;
+    --col-dim: #28827d;
+    --col-dimmer: #1a6a6e;
+    --col-min: #0c525f;
+}
+
+.theme-neonred {
+    --col-max: #f8427d;
+    --col-brighter: #e13d75;
+    --col-bright: #cb396d;
+    --col-standard: #b53367;
+    --col-standard-dim: #9f2e61;
+    --col-dim: #882959;
+    --col-dimmer: #722451;
+    --col-min: #5c1f49;
+}

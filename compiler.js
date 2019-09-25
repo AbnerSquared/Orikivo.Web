@@ -1,3 +1,4 @@
+// sections/commands.html compiler
 var ClassTags = {
     Module: "module",
     Command: "command",

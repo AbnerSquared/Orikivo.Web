@@ -1,0 +1,323 @@
+/*
+.css rework
+
+required fonts:
+Comfortaa (for logo text)
+Libre Barcode 39 (for logo flair)
+
+colors will now be managed with .js
+however, making fallback colors work just fine.
+
+when database starts to work
+capture the user's color map
+on their account
+and color the site using that
+
+const colors
+1:discord-light:
+2:discord-dark:
+
+discord-presence-colors:
+discord-online:
+discord-away:
+discord-busy:
+discord-offline:
+
+// this is used to animate examples:
+discord.embedFormats:
+Get the css for embeds:
+.embedPill:
+    width: 4px;
+    background-color: #cacbce;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+
+.embedPill_Dark:
+    background-color: #4f545c;
+
+.embedInner:
+    padding: 8px 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: hsla(0,0%,97.6%,.3);
+    border: 1px solid hsla(0,0%,80.4%,.3);
+    border-radius: 0 3px 3px 0;
+    overflow: hidden;
+
+.embedInner_Dark:
+    background-color: rgba(46,48,54,.3);
+    border-color: rgba(46,48,54,.6);
+
+.embedContent:
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+.embedContentInner:
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    overflow: hidden;
+
+<div><span>
+.embedTitle:
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: inline-block;
+    color: #4f545c;
+
+.embedTitle_Dark:
+    color: #fff!important;
+
+<div>
+.embedDescription:
+    font-size: 0.875rem;
+    line-height: 1rem;
+    font-weight: 400;
+    color: rgba(79,83,91,.9);
+    letter-spacing: 0;
+    white-space: pre-line;
+
+.embedDescription_Dark:
+    color: hsla(0,0%,100%,.6);
+
+
+.embedMargin:
+    margin-top: 4px;
+
+.markup strong:
+    font-weight: 700;
+
+
+.embed strong:
+    font-weight: 600;
+
+.embed .emoji:
+    -o-object-fit: contain;
+    object-fit: contain;
+    width: 1rem;
+    height: 1rem;
+    min-width: 22px;
+    min-height: 22px;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -.4em;
+
+.emoji:
+    -o-object-fit: contain;
+    object-fit: contain;
+    width: 1.375em;
+    height: 1.375em;
+    vertical-align: bottom;
+
+.markup:
+    font-size: 1rem;
+    line-height: 1.375;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    color: #dcddde;
+    font-weight: 400;
+
+.markup code:
+    font-size: 0.875rem;
+    line-height: 1rem;
+    text-indent: 0;
+    background-color: #2f3136;
+
+.markup code .inline:
+    width: auto;
+    height: auto;
+    padding: .2em;
+    margin: -.2em 0;
+    border-radius: 3px;
+    font-size: 85%;
+    font-family: SourceCodePro, Consolas, Liberation Mono, Menlo, Courier, monospace;
+    text-indent: 0;
+    border: none;
+
+.blockquoteContainer:
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+.blockquoteDivider:
+    #4f545c;
+
+
+.blockquoteContainer .blockquoteDivider:
+    margin: 8px 0;
+    width: 4px;
+    border-radius: 4px;
+
+.blockquoteContainer blockquote:
+    padding: 0 8px 0 12px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-indent: 0;
+
+.markup blockquote:
+    margin: 8px 0;
+    text-indent: 0;
+
+.markup blockquote, .markup pre:
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width:90%;
+
+
+<div>
+.embedFooter:
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+<span>
+.embedFooterText:
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: rgba(79,83,91,.6);
+    letter-spacing: 0;
+
+.embedFooterText_Dark:
+    color: hsla(0,0%,100%,.6);
+
+.embedMarginLarge:
+    margin-top: 8px;
+
+.edited:
+    margin-left: .3em;
+    font-size: 0.625rem;
+    cursor: pointer;
+    line-height: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+.edited_Dark:
+    color: hsla(0,0%,100%,.2);
+
+for mentions:
+.wrapper:
+    padding: 0 2px;
+    font-weight: 500;
+
+.wrapper_Dark:
+    color: #7289da;
+    background-color: rgba(114,137,218,.1);
+
+.wrapperHover:
+    -webkit-transition: background-color 50ms ease-out, color 50ms ease-out;
+    transition: background-color 50ms ease-out, color 50ms ease-out;
+    cursor: pointer;
+
+.anchor:
+    color: #00b0f4;
+    text-decoration: none;
+
+.markup a:
+    color: #00b0f4;
+    unicode-bidi: bidi-override;
+    direction: ltr;
+    word-break: break-word;
+    text-decoration: none;
+    cursor: pointer;
+
+// base for messages
+.container:
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+
+// image container??
+.container:
+    padding-right: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+.imageWrapper:
+    display: block;
+    position: relative;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    overflow: hidden;
+    border-radius: 3px;
+
+.imageZoomIn:
+    cursor: nesw-resize;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+
+.clickable:
+    cursor: pointer;
+
+.containerCozy *:
+    margin-top: 8px;
+
+.containerCozy:not(:empty):
+    margin-bottom: 8px;
+
+.isMentioned:
+    margin: -.1rem -.2rem .1rem;
+    padding: .1rem .2rem;
+
+.isMentionedCozy:
+    border-radius: 0 3px 3px 0;
+    position: relative;
+
+.isMentionedCozy:after:
+    position: absolute;
+    top: 0;
+    left: -6px;
+    bottom: 0;
+    content: " ";
+    width: 2px;
+    background: rgba(250,166,26,.2);
+    border-left: 4px solid #faa61a;
+    border-radius: 3px 0 0 3px;
+
+.isMentioned_Dark:
+    background: rgba(250,166,26,.1);
+
+.mention .isMentioned:
+    padding: 0;
+
+.mention .isMentioned_Dark:
+    background: transparent!important;
+
+.hljs-string:
+    color: #2aa198;
+
+.hljs-comment:
+    color: #4f545c;
+
+
+
+color maps =>
+
+font-size:
+size-max:
+size-larger:
+size-large:
+size-standard:
+size-small:
+size-smaller:
+size-min:
+
+
+.js modifies the values of these colors */
+/* create a font import*/
