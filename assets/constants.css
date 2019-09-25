@@ -78,6 +78,13 @@
 */
 
 :root {
+    /* discord user status colors */
+    --discordStatusOnline: #fff;
+    --discordStatusAway: #fff;
+    --discordStatusBusy: #fff;
+    --discordStatusOffline: #fff;
+    
+    /* default fallback theme colors */
     --col-max: #ffffff;
     --col-brighter: #b6b6b6;
     --col-standard: #929292;
