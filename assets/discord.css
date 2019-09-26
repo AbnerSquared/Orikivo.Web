@@ -17,12 +17,25 @@
     background: transparent;
 }
 
+.content {
+    padding-right: 10px;
+}
+
+.contentCozy {
+    margin-left: 80px;
+}
+
 .emoji {
     -o-object-fit: contain;
     object-fit: contain;
     width: 1.375em;
     height: 1.375em;
     vertical-align: bottom;
+}
+
+.emoji .jumboable {
+    width: 2rem;
+    height: 2rem;
 }
 
 .markup {
@@ -134,6 +147,12 @@
     overflow: hidden;
 }
 
+.embedThumbnail {
+    margin-left: 16px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
 .embedTitle {
     font-size: 0.875rem;
     font-weight: 500;
@@ -158,6 +177,80 @@
     color: hsla(0, 0%, 100%, .6);
 }
 
+.embedAuthor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.embedAuthorIcon {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.embedAuthorName {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #4f545c!important;
+}
+
+.embedFields {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    color: #36393f;
+}
+
+.embedField {
+    margin-top: 4px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0;
+    flex: 0;
+    min-width: 100%;
+}
+
+.embedFieldInline {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-width: 150px;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+}
+
+.embedFieldName {
+    margin-bottom: 4px;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.embedFieldValue {
+    font-size: 0.875rem;
+    font-weight: 400;
+    white-space: pre-line;
+}
+
+.discordDark .embedFieldValue {
+    color: hsla(0, 0%, 100%, .6);
+}
+
+.discordDark .embedAuthorName, .discordDark .embedFieldName {
+    color: #fff!important;
+}
+
 .embedFooter {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -172,6 +265,15 @@
     font-weight: 400;
     color: rgba(79, 83, 91, .6);
     letter-spacing: 0;
+}
+
+.embedFooterIcon {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    border-radius: 50%;
 }
 
 .discordDark .embedFooterText {
@@ -235,16 +337,50 @@
 
 .anchor {
     color: #00b0f4;
-    text-decoration: none;;
+    text-decoration: none;
 }
 
-.messageContainer {
+.messagesContainer {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #36393f;
+    contain: layout size;
+}
+
+.scroller {
+    overflow-y: scroll;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.messageInnerContainer {
     -webkit-user-select: text;
     -moz-user-select: text;
     -ms-user-select: text;
     user-select: text;
 }
 
+.messageContainer {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+.messageContainerCozy {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.messageContainerCozyBounded {
+    overflow: hidden;
+}
+
+/* used on embeds and images, to help keep their content to 1 per 'line' */
 .container {
     padding-right: 4px;
     display: -webkit-box;
@@ -257,11 +393,30 @@
     flex-direction: column;
 }
 
+
+/* not an official class, used to constrict large thumbnails. */
+.embedThumbnailMax {
+    width: 80px;
+    height: 80px;
+}
+
+.embedThumbnail img {
+    display: block;
+}
+
+.imageWrapper img {
+    position: absolute;
+}
+
+a img {
+    border: none;
+}
+
 .imageContainerCozy * {
     margin-top: 8px;
 }
 
-.imageContainerCozy:not(:empty) {
+.genericContainerCozy:not(:empty) {
     margin-bottom: 8px;
 }
 

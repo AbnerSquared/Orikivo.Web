@@ -9,3 +9,43 @@ such as EmbedGenerator
 gather embed length constraints
 
 loading catcher to allow other elements to load in without looking out
+
+
+Discord Embed Class Structure:
+
+Inline: <code class="inline">{INLINE_TEXT}
+Bold: <strong>{BOLD_TEXT}
+Block Quote:
+<div class="blockquoteContainer">
+    <div class="blockquoteDivider"></div>
+    <blockquote>{BLOCKQUOTE_TEXT}
+Emoji: <img src="EMOJI_URL" draggable="false" class="emoji jumboable">
+    
+
+<div class="containerCozy container">
+    <div class="embed embedWrapper">
+        <div class="embedPill">
+        <div class="embedInner">
+            <div class="embedContent">
+                <div class="embedContentInner markup">
+                    <div class="embedAuthor">
+                        <img class="embedAuthorIcon" src="{AUTHOR_ICON_URL}">
+                        <span class="embedAuthorName">{AUTHOR_NAME}
+                    <div>
+                        <span class="embedTitle">{TITLE_TEXT}
+                    <div class="embedDescription embedMargin">{DESCRIPTION_TEXT}
+                    <div class="embedFields embedMargin">
+                        <div class="embedField">
+                            <div class="embedFieldName">{FIELD_NAME}
+                            <div class="embedFieldValue">{FIELD_VALUE}
+                        <div class="embedField embedFieldInline>
+                            <div class="embedFieldName">{FIELD_NAME}
+                            <div class="embedFieldValue">{FIELD_VALUE}
+                <a class="anchor anchorUnderlineOnHober imageWrapper imageZoomIn clickable embedThumbnail">
+                    <img src="{EMBED_THUMBNAIL_URL}"
+            <div class="embedFooter embedMarginLarge">
+                <img class="embedFooterIcon" src="{FOOTER_ICON_URL}">
+                <span class="embedFooterText">{FOOTER_TEXT}
+                    <span class="embedFooterSeparator">•</span>
+                    {TIMESTAMP_TEXT}
+

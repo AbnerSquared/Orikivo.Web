@@ -78,6 +78,12 @@
 */
 
 :root {
+    --discordBlurple: #7289da;
+    --discordStatusOnline: #43b581;
+    --discordStatusAway: #faa61a;
+    --discordStatusBusy: #f04747;
+    --discordStatusOffline: #747f8d;
+
     --col-max: #ffffff;
     --col-brighter: #b6b6b6;
     --col-standard: #929292;
