@@ -127,7 +127,7 @@
     align-content: center;
 }
 
-.arcadia .fullBody {
+.fullBody {
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -135,21 +135,21 @@
     flex-direction: row;
 }
 
-.arcadia .header {
+.header {
     font-family: Signika;
     font-weight: 700;
     font-size: 26px;
     color: var(--col-max);
 }
 
-.arcadia .subtitle {
+.subtitle {
     font-family: Signika;
     font-weight: 700;
     font-size: 18px;
     color: var(--col-brighter);
 }
 
-.arcadia .content {
+.content {
     font-family: Signika;
     font-weight: 700;
     font-size: 16px;
