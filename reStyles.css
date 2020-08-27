@@ -2,12 +2,46 @@
 @import "assets/constants.css";
 @import url('https://fonts.googleapis.com/css2?family=NTR&family=Viga&family=Libre+Barcode+39&family=Signika:wght@700&display=swap');
 
-body {
+.bgDimmerMin {
     background: linear-gradient(180deg,
                 var(--col-dimmer) 0,
                 var(--col-min) 100%)
 }
 
+/* Color overrides */
+.backMax {
+    background: var(--col-max);
+}
+
+.bgBrighter {
+    background: var(--col-brighter);
+}
+
+.bgBright {
+    background: var(--col-bright);
+}
+
+.bgStandard {
+    background: var(--col-standard);
+}
+
+.bgStandardDim {
+    background: var(--col-standard-dim);
+}
+
+.bgDim {
+    background: var(--col-dim);
+}
+
+.bgDimmer {
+    background: var(--col-dimmer);
+}
+
+.bgMin {
+    background: var(--col-min);
+}
+
+/* Logo classes */
 .logo {
     position: relative;
     width: 144px;
@@ -61,6 +95,14 @@ body {
     padding-top: 14px;
 }
 
+.padTop {
+    padding-top: 16px;
+}
+
+.padLeft {
+    padding-left: 16px;
+}
+
 .arcadia .secondaryText {
     height: 24px;
     font-family: Signika;
@@ -71,6 +113,47 @@ body {
 .modera .secondaryText {
     font-family: Viga, sans-serif;
     font-size: 24px;
+}
+
+.inviteNotice {
+    position: relative;
+    border-left: 8px solid var(--col-max);
+    display: flex;
+    margin-top: 16px;
+    margin-left: 16px;
+    height: max-content;
+    flex-direction: column;
+    padding: 8px;
+    align-content: center;
+}
+
+.arcadia .fullBody {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.arcadia .header {
+    font-family: Signika;
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--col-max);
+}
+
+.arcadia .subtitle {
+    font-family: Signika;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--col-brighter);
+}
+
+.arcadia .content {
+    font-family: Signika;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--col-bright);
 }
 
 .innerLogo {

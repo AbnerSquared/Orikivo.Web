@@ -15,11 +15,15 @@ a,abbr,acronym,address,applet,big,blockquote,body,caption,cite,code,dd,del,dfn,d
 }
 
 p {
-    /*color: var(--col-min);*/
+    color: var(--col-min);
+}
+
+a:hover {
+    color: var(--col-bright);
 }
 
 a {
-    /*color: var(--col-min);*/
+    color: var(--col-max);
     text-decoration: none;
     cursor: pointer;
 }
