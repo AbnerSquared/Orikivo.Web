@@ -1,6 +1,7 @@
 /* global constants used within css rulesets */
+/* ReSharper disable RequiresFallbackColor */
 
-.discordLight {
+.discord-light {
     --header-primary: #060607;
     --header-secondary: #4f5660;
     --text-normal: #2e3338;
@@ -30,7 +31,7 @@
     --activity-card-background: #fff;
 }
 
-.discordDark {
+.discord-dark {
     --header-primary: #fff;
     --header-secondary: #b9bbbe;
     --text-normal: #dcddde;
@@ -60,57 +61,97 @@
     --activity-card-background: #202225;
 }
 
-
-/*
-
+/* This is a template for future themes
 .theme-
 {
-    --col-max: #
-    --col-brighter: #
-    --col-bright: #
-    --col-standard: #
-    --col-standard-dim: #
-    --col-dim: #
-    --col-dimmer: #
-    --col-min: #
+    --col-max: #;
+    --col-brighter: #;
+    --col-bright: #;
+    --col-standard: #;
+    --col-standard-dim: #;
+    --col-dim: #;
+    --col-dimmer: #;
+    --col-min: #;
 }
-
 */
 
 :root {
-    --discordBlurple: #7289da;
-    --discordStatusOnline: #43b581;
-    --discordStatusAway: #faa61a;
-    --discordStatusBusy: #f04747;
-    --discordStatusOffline: #747f8d;
-
-    --col-max: #ffffff;
-    --col-brighter: #b6b6b6;
+    --discord-blurple: #7289DA;
+    --discord-status-online: #43B581;
+    --discord-status-away: #FAA61A;
+    --discord-status-busy: #F04747;
+    --discord-status-offline: #747F8D;
+    --col-max: #FFFFFF;
+    --col-brighter: #B6B6B6;
     --col-standard: #929292;
-    --col-standard-dim: #6d6d6d;
+    --col-standard-dim: #6D6D6D;
     --col-dim: #494949;
     --col-dimmer: #242424;
     --col-min: #000000;
+    --col-min-partial: rgba(0, 0, 0, 128);
+    --col-min-empty: rgba(0, 0, 0, 0);
 }
 
-.theme-origreen {
+.theme-default {
+    --col-max: #FFFFFF;
+    --col-brighter: #B6B6B6;
+    --col-standard: #929292;
+    --col-standard-dim: #6D6D6D;
+    --col-dim: #494949;
+    --col-dimmer: #242424;
+    --col-min: #000000;
+    --col-min-partial: rgba(0, 0, 0, 128);
+    --col-min-empty: rgba(0, 0, 0, 0);
+}
+
+.theme-gammagreen {
     --col-max: #6efac8;
-    --col-brighter: #60e2b9;
-    --col-bright: #52caaa;
-    --col-standard: #44b29b;
-    --col-standard-dim: #369a8c;
-    --col-dim: #28827d;
-    --col-dimmer: #1a6a6e;
-    --col-min: #0c525f;
+    --col-brighter: #60E2B9;
+    --col-bright: #52CAAA;
+    --col-standard: #44B29B;
+    --col-standard-dim: #369A8C;
+    --col-dim: #28827D;
+    --col-dimmer: #1A6A6E;
+    --col-min: #0C525F;
+    --col-min-partial: rgba(12, 82, 95, 128);
+    --col-min-empty: rgba(12, 82, 95, 0);
 }
 
-.theme-neonred {
-    --col-max: #f8427d;
-    --col-brighter: #e13d75;
-    --col-bright: #cb396d;
-    --col-standard: #b53367;
-    --col-standard-dim: #9f2e61;
+.theme-crimson {
+    --col-max: #F8427D;
+    --col-brighter: #E13D75;
+    --col-bright: #CB396D;
+    --col-standard: #B53367;
+    --col-standard-dim: #9F2E61;
     --col-dim: #882959;
     --col-dimmer: #722451;
-    --col-min: #5c1f49;
+    --col-min: #5C1F49;
+    --col-min-partial: rgba(92, 31, 73, 128);
+    --col-min-empty: rgba(92, 31, 73, 0);
+}
+
+.theme-wumpite {
+    --col-max: #8BA4F3;
+    --col-brighter: #7F97E7;
+    --col-bright: #738ADB;
+    --col-standard: #677DCF;
+    --col-standard-dim: #5B70C3;
+    --col-dim: #4F63B7;
+    --col-dimmer: #4356AB;
+    --col-min: #34489F;
+    --col-min-partial: rgba(52, 72, 159, 128);
+    --col-min-empty: rgba(52, 72, 159, 0);
+}
+
+.theme-glass {
+    --col-max: #DEFFFA;
+    --col-brighter: #A8E7DF;
+    --col-bright: #87D0C8;
+    --col-standard: #52A6A1;
+    --col-standard-dim: #469996;
+    --col-dim: #31807F;
+    --col-dimmer: #2B6C74;
+    --col-min: #1C595E;
+    --col-min-partial: rgba(28, 89, 94, 128);
+    --col-min-empty: rgba(28, 89, 94, 0);
 }

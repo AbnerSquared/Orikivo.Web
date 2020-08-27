@@ -1,24 +1,101 @@
-/*
-.css rework
+/* ReSharper disable InvalidValue */
+@import "assets/constants.css";
+@import url('https://fonts.googleapis.com/css2?family=NTR&family=Viga&family=Libre+Barcode+39&family=Signika:wght@700&display=swap');
 
-required fonts:
-Comfortaa (for logo text)
-Libre Barcode 39 (for logo flair)
-Quicksand
+body {
+    background: linear-gradient(180deg,
+                var(--col-dimmer) 0,
+                var(--col-min) 100%)
+}
 
-colors will now be managed with .js
-however, making fallback colors work just fine.
+.logo {
+    position: relative;
+    width: 144px;
+    height: 104px;
+}
 
-when database starts to work
-capture the user's color map
-on their account
-and color the site using that
+.innerBorderShading {
+    position: relative;
+    width: 120px;
+    height: 8px;
+    background: linear-gradient(180deg,
+                var(--col-min) 0,
+                var(--col-min-empty) 100%)
+}
 
-discord-presence-colors:
-discordStatusOnline:
-discordStatusAway:
-discordStatusBusy:
-discordStatusOffline:
+.primaryText {
+    position: relative;
+    padding-top: 12px;
+    width: 120px;
+    height: 16px;
+    font-family: NTR, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 16px;
+    text-align: center;
+    color: var(--col-max);
+    text-shadow: 0 4px 4px var(--col-min-partial);
+    /*! padding: 0 50%; */
+}
 
+/* modera secondaryText*/
+.secondaryText {
+    position: relative;
+    width: 120px;
+    height: 12px;
+    padding-top: 8px;
+    font-family: Viga, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 16px;
+    text-align: center;
+    color: var(--col-max);
+    text-shadow: 0 4px 4px var(--col-min-partial);
+}
 
-*/
+.orikivo .secondaryText {
+    font-family: "Libre Barcode 39", cursive;
+    font-size: 30px;
+    padding-top: 14px;
+}
+
+.arcadia .secondaryText {
+    height: 24px;
+    font-family: Signika;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.modera .secondaryText {
+    font-family: Viga, sans-serif;
+    font-size: 24px;
+}
+
+.innerLogo {
+    position: relative;
+    width: 120px;
+    height: 72px;
+    /*       T R B L */
+    margin: 8px 8px 8px 8px;
+    background: var(--col-dimmer);
+    border: 4px solid var(--col-max);
+}
+
+.outerLogo {
+    position: absolute;
+    width: 144px;
+    height: 96px;
+    background: linear-gradient(180deg,
+                var(--col-dimmer) 0,
+                var(--col-min) 100%);
+}
+
+.flatLogoShading {
+    position: absolute;
+    width: 144px;
+    height: 8px;
+    background: var(--col-dimmer);
+    margin-top: 96px;
+}

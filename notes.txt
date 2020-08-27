@@ -49,3 +49,46 @@ Emoji: <img src="EMOJI_URL" draggable="false" class="emoji jumboable">
                     <span class="embedFooterSeparator">•</span>
                     {TIMESTAMP_TEXT}
 
+
+                    <body>
+        <h1>This is to verify Discord's Embed CSS ruleset.</h1>
+        <div class="discordDark discordContainer">
+            <div class="messagesContainer">
+                <div class="contentCozy content">
+                    <div class="messageInnerContainer"></div>
+                    <div class="genericContainerCozy container">
+                        <div class="embed embedWrapper">
+                            <div class="embedPill"></div>
+                            <div class="embedInner">
+                                <div class= "embedContent">
+                                    <div class="embedContentInner markup">
+                                        <div class="embedAuthor">
+                                            <span class="embedAuthorName">author</span>
+                                        </div>
+                                        <div>
+                                            <span class="embedTitle">title</span>
+                                        </div>
+                                        <div class="embedDescription embedMargin">description</div>
+                                        <div class="embedFields embedMargin">
+                                            <div class="embedField">
+                                                <div class="embedFieldName">name</div>
+                                                <div class="embedFieldValue">value</div>
+                                            </div>
+                                            <div class="embedField embedFieldInline">
+                                                <div class="embedFieldName">name</div>
+                                                <div class="embedFieldValue">value+inline</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="embedFooter embedMarginLarge">
+                                    <span class="embedFooterText">text</span>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+

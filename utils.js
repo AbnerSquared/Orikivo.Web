@@ -86,7 +86,7 @@ function createCssLink(stylesheet)
 
 function toggleElement(element)
 {
-    if (element.style.display == "none" || element.style.display == null)
+    if (element.style.display === "none" || element.style.display == null)
         element.style.display = "block";
     else
     {
