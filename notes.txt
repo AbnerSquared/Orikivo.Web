@@ -30,7 +30,7 @@ EXP
 Interact with the bot to increase your EXP to unlock new shops, gain access to new items, discover new casino game modes, and expand your overall interaction with Orikivo Arcade!
 
 
-
+Create changelog page template to allow for the customization of changelogs
 
 make an extension for EmbedBuilder to allow
 .WithColor(UserStatus status)
