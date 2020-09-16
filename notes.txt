@@ -1,3 +1,37 @@
+Welcome to the arcade.
+
+Orikivo Arcade is a Discord bot dedicated to creating a unique interactive experience for servers and users alike!
+
+Multiplayer
+Search and hop into multiplayer sessions with other users across Arcadia and play from a selection of games!
+
+Merits
+Accomplish tasks to prove your worth! Collect all of the merits out there, and discover hidden ones!
+
+Leaderboards
+View the highest ranked members with advanced filters for stats, wallets, merits, and more!
+
+Shops
+Visit the shops to find and purchase new items for personal use!
+
+Inventory
+Collect, discover, craft, sell, trade, gift, and use a wide variety of items for many varied purposes! Change card colors, get yourself out of debt, apply boosters to increase your income, upgrade certain items to obtain a better effectiveness, discover hidden locations, and so much more!
+
+Stats
+Track a wide range of stats for everything you perform on Orikivo Arcade! Find out how much money you've lost gambling for the 500th time, see your longest daily streak, and compare them with other users!
+
+Casino
+Stop by the casino and test your luck! Convert your Orite into Chips, and hop into an expanding range of Casino games!
+
+Cards
+Customize your card to the fullest extent! Craft new color palettes, find new card fonts, and set up your card to your own unique preferences!
+
+EXP
+Interact with the bot to increase your EXP to unlock new shops, gain access to new items, discover new casino game modes, and expand your overall interaction with Orikivo Arcade!
+
+
+Create changelog page template to allow for the customization of changelogs
+
 make an extension for EmbedBuilder to allow
 .WithColor(UserStatus status)
 where the UserStatus would be the color of the
