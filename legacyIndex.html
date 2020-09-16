@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<meta charset="UTF-8"> 
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="utils.js"></script>
+        <script src="static.js"></script>
+    </head>
+    <body>
+        <div class="side-header">
+            <div id="root-header" class="header">
+                <div class="logo">
+                    <div id="title">orikivo</div>
+                    <div id="flair">ORIKIVO</div>
+                </div>
+                <div id="nav-bar" class="nav-bar">
+                    <div class="current-nav-button">home</div>
+                    <div class="gradient-box"></div>
+                    <div class="nav-button"><a href="sub/commands.html">commands</a></div>
+                    <div class="gradient-box"></div>
+                </div>
+                <div class="gradient-box"></div>
+            </div>
+            <div class="hover-gradient-box"></div>
+            <div class="header-list"> 
+            </div>
+        </div>
+        <div class="side-content">
+            <div class="small-padder"></div>
+            <div class="content-header">
+                <div id="dbl-widget"></div>
+            </div>
+            <div class="left-container">
+                <div id="title">Orikivo is hibernating...</div>
+                <div class="small-padder"></div>
+            </div>
+        </div>
+        <div class="side-footer">
+            <div class="footer-panel">
+                <div class="centered-logo">
+                    <div id="title">orikivo</div>
+                    <div id="flair">ORIKIVO</div>
+                </div>
+                <div class="footer-developer">2018-2020</div>
+            </div>
+        </div>
+        <script>
+            // Fix flashing default stylesheet before implementing
+            //document.getElementsByTagName("head")[0].appendChild(createCssLink("styles.css"));
+            document.getElementById("dbl-widget").appendChild(createDblWidget(discordBotId, "6efac8", "27827f", "0c535f", "0c535f", "44b29b", "6efac8"));
+            //document.getElementById("root-header").appendChild(createLogo("orikivo"));
+        </script>
+    </body>
+</html>
