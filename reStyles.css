@@ -127,6 +127,20 @@
     align-content: center;
 }
 
+    .inviteNotice .header {
+        font-family: Signika;
+        font-weight: 700;
+        font-size: 26px;
+        color: var(--col-max);
+    }
+
+    .inviteNotice .subtitle {
+        font-family: Signika;
+        font-weight: 700;
+        font-size: 18px;
+        color: var(--col-brighter);
+    }
+
 .fullBody {
     width: 100vw;
     height: 100vh;
@@ -135,26 +149,231 @@
     flex-direction: row;
 }
 
-.header {
-    font-family: Signika;
-    font-weight: 700;
-    font-size: 26px;
-    color: var(--col-max);
+
+.flatLogoShading {
+    position: absolute;
+    width: 144px;
+    height: 8px;
+    background: var(--col-dimmer);
+    margin-top: 96px;
 }
 
-.subtitle {
-    font-family: Signika;
-    font-weight: 700;
+a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, ul, var {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+li {
+    list-style-type: none;
+}
+
+    li::marker {
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+.bgDimmerMin {
+    background: linear-gradient(180deg, var(--col-dimmer) 0, var(--col-min) 100%);
+}
+
+marginBottom {
+    margin-bottom: 8px;
+}
+
+.content {
+    font-family: NTR, sans-serif;
+    line-height: 18px;
     font-size: 18px;
     color: var(--col-brighter);
 }
 
-.content {
-    font-family: Signika;
-    font-weight: 700;
-    font-size: 16px;
-    color: var(--col-bright);
+.title {
+    font-family: Viga, sans-serif;
+    font-size: 24px;
 }
+
+.pageMenu {
+    display: flex;
+    width: 100%;
+    min-width: 972px;
+    background: linear-gradient(180deg, var(--col-dim) 0, var(--col-dimmer) 100%);
+    height: 88px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    flex-wrap: no-wrap;
+    justify-content: left;
+    align-items: center;
+    align-content: stretch;
+}
+
+.menuButton {
+    display: flex;
+    flex-grow: 0;
+    position: relative;
+    width: auto;
+    text-shadow: 0 4px 4px var(--col-dimmer);
+    justify-content: center;
+    align-items: stretch;
+    padding-left: 16px;
+    line-height: 24px;
+    padding-bottom: 4px;
+    margin-left: 8px;
+    margin-right: 8px;
+    align-content: center;
+    text-align: center;
+    font-family: Viga, sans-serif;
+    font-size: 24px;
+    color: var(--col-brighter);
+    float: left;
+    height: 24px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.menuActive {
+    color: var(--col-max);
+    cursor: default;
+}
+
+.activeBar {
+    width: 100%;
+    position: absolute;
+    margin-top: 26px;
+    height: 4px;
+    display: block;
+    background: var(--col-max);
+    box-shadow: 0 4px 4px var(--col-dimmer);
+    transition: 0.5s;
+}
+
+.menuButton:hover {
+    color: var(--col-max);
+}
+
+.pageHeader {
+    width: calc(100% - 16px);
+    margin: auto;
+}
+
+    .pageHeader .title {
+        font-family: Viga, sans-serif;
+        font-size: 36px;
+        color: var(--col-max);
+        text-align: center;
+    }
+
+    .pageHeader .subtitle {
+        padding-top: 4px;
+        font-size: 18px;
+        color: var(--col-max);
+        line-height: 18px;
+        font-family: NTR, sans-serif;
+        text-align: center;
+    }
+
+.pageContent .contentHeader {
+    padding: 8px;
+}
+
+    .pageContent .contentHeader .header {
+        font-family: Viga, sans-serif;
+        background: linear-gradient(135deg, var(--col-dim) 0, var(--col-dimmer) 100%);
+        border-radius: 8px;
+        padding-top: 8px;
+        padding-left: 8px;
+        margin-bottom: 8px;
+    }
+
+        .pageContent .contentHeader .header .title {
+            font-size: 32px;
+            color: var(--col-max);
+        }
+
+        .pageContent .contentHeader .header .subtitle {
+            font-size: 24px;
+            line-height: 24px;
+            font-family: Viga, sans-serif;
+            color: var(--col-brighter);
+        }
+
+        .pageContent .contentHeader .header .content {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-family: NTR, sans-serif;
+            color: var(--col-max);
+        }
+
+.contentSection {
+    width: calc(100% - 16px);
+    margin: auto;
+    margin-bottom: 8px;
+}
+
+    .contentSection .header {
+        padding-left: 8px;
+        border-left: 4px solid var(--col-max);
+        margin-left: 8px;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+        .contentSection .header .title {
+            font-family: Viga, sans-serif;
+            font-size: 24px;
+            color: var(--col-max);
+        }
+
+        .contentSection .header .content {
+            font-family: NTR, sans-serif;
+            vertical-align: top;
+            line-height: 24px;
+            font-size: 18px;
+            color: var(--col-brighter);
+        }
+
+    .contentSection .contentBody {
+        padding-left: 8px;
+        background: linear-gradient(135deg, var(--col-dim) 0, var(--col-dimmer) 100%);
+        border-radius: 8px;
+    }
+
+        .contentSection .contentBody .content {
+            padding-top: 4px;
+            font-size: 18px;
+            display: block;
+            color: var(--col-bright);
+        }
+
+.contentList {
+    background: linear-gradient(135deg, var(--col-dim) 0, var(--col-dimmer) 100%);
+    border-radius: 8px;
+}
+
+    .contentList li {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 8px;
+    }
+
+    .contentList .title {
+        font-size: 20px;
+        color: var(--col-brighter);
+        display: block;
+    }
+
+    .contentList .content {
+        font-size: 18px;
+        display: block;
+        color: var(--col-bright);
+    }
 
 .innerLogo {
     position: relative;
@@ -170,15 +389,84 @@
     position: absolute;
     width: 144px;
     height: 96px;
-    background: linear-gradient(180deg,
-                var(--col-dimmer) 0,
-                var(--col-min) 100%);
+    background: linear-gradient(180deg, var(--col-dimmer) 0, var(--col-min) 100%);
 }
 
 .flatLogoShading {
     position: absolute;
     width: 144px;
     height: 8px;
-    background: var(--col-dimmer);
+    background: var(--col-dim);
     margin-top: 96px;
+}
+
+.arcadia .secondaryText {
+    height: 24px;
+    font-family: Signika;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.logo {
+    display: flex;
+    position: relative;
+    margin-left: 8px;
+    width: 144px;
+    height: 104px;
+}
+
+.innerBorderShading {
+    position: relative;
+    width: 120px;
+    height: 8px;
+    background: linear-gradient(180deg, var(--col-min) 0, var(--col-min-empty) 100%)
+}
+
+.primaryText {
+    position: relative;
+    padding-top: 12px;
+    width: 120px;
+    height: 16px;
+    font-family: NTR, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 16px;
+    text-align: center;
+    color: var(--col-max);
+    text-shadow: 0 4px 4px var(--col-min-partial);
+    /*! padding: 0 50%; */
+}
+
+.secondaryText {
+    position: relative;
+    width: 120px;
+    height: 12px;
+    padding-top: 8px;
+    font-family: Viga, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 16px;
+    text-align: center;
+    color: var(--col-max);
+    text-shadow: 0 4px 4px var(--col-min-partial);
+}
+
+.important {
+    color: var(--col-max);
+}
+
+.markdown {
+    background: var(--col-standard-dim);
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 4px;
+    color: var(--col-max);
+}
+
+.bullet {
+    padding: 2px;
+    margin-right: 4px;
+    color: var(--col-brighter);
 }
