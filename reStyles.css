@@ -5,7 +5,8 @@
 .bgDimmerMin {
     background: linear-gradient(180deg,
                 var(--col-dimmer) 0,
-                var(--col-min) 100%)
+                var(--col-min) 100%);
+	height: 100vh;			
 }
 
 /* Color overrides */
