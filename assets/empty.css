@@ -18,10 +18,6 @@ p {
     color: var(--col-min);
 }
 
-a:hover {
-    color: var(--col-bright);
-}
-
 a {
     color: var(--col-max);
     text-decoration: none;

@@ -244,6 +244,11 @@ marginBottom {
     cursor: default;
 }
 
+.menuDisabled {
+    color: var(--col-bright);
+    cursor: default;
+}
+
 .activeBar {
     width: 100%;
     position: absolute;
