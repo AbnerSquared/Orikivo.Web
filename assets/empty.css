@@ -29,19 +29,22 @@ a img
     border: none;
 }
 
+hideOverflow {
+    overflow: hidden;
+}
+
 body
 {
     line-height: 1;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
     color: var(--col-max);
     background: var(--col-min);
-    /*background: transparent;*/
 }
 
 code {}

@@ -8,8 +8,8 @@
     <link rel="stylesheet" type="text/css" href="../reStyles.css">
 </head>
 <body class="arcadia theme-glass bgDimmerMin">
-    <div class="pageMenu">
-        <div class="arcadia logo">
+    <div class="pageMenu fixed">
+        <div class="arcadia logoBase">
             <div class="outerLogo">
                 <div class="innerLogo">
                     <div class="innerBorderShading"></div>
@@ -17,71 +17,111 @@
                     <div class="secondaryText">ARCADE</div>
                 </div>
             </div>
-            <div class="flatLogoShading"></div>
         </div>
-        <a href="../index.html" class="menuButton">ABOUT</a>
-        <a class="menuButton menuActive">CHANGELOGS<span class="activeBar"></span></a>
-        <div class="menuButton menuDisabled">COMMANDS</div>
-        <div class="menuButton menuDisabled">HISTORY</div>
-        <div class="menuButton menuDisabled">CONTACT</div>
-        <a href="../invites/arcadia.html" class="menuButton">INVITE</a>
+        <div class="menuBar">
+            <a href="../index.html" class="menuButton">ABOUT</a>
+            <a class="menuButton menuActive">CHANGELOGS<span class="activeBar"></span></a>
+            <div class="menuButton menuDisabled">COMMANDS</div>
+            <div class="menuButton menuDisabled">HISTORY</div>
+            <div class="menuButton menuDisabled">CONTACT</div>
+            <a href="../invites/arcadia.html" class="menuButton">INVITE</a>
+            <div class="menuButton menuDisabled">VOTE</div>
+        </div>
     </div>
-    <div class="pageHeader">
+    <div class="pageHeader fixedMenuPadding">
         <div class="title">Changelogs</div>
         <div class="subtitle">This is where all of the previous updates are located.</div>
     </div>
-    <div class="pageContent">
-        <div class="contentHeader">
-            <div class="header">
-                <div class="title">9.5.2020</div>
-                <div class="subtitle">Exponential Expansion</div>
-                <div class="content">This update is simply too much!</div>
-            </div>
-        </div>
-        <div class="contentSection">
-            <div class="header">
-                <div class="title">Additions</div>
-            </div>
-            <div class="contentBody">
-                <ul class="contentList">
-                    <li>
-                        <div class="title"><span class="bullet">+</span>Added new casino game mode: <span class="important">Roulette</span></div>
-                        <div class="content">Roulette has a betting cap of <span class="important">1,000</span></div>
-                    </li>
-                    <li>
-                        <div class="title"><span class="bullet">+</span>Added a new command: <span class="markdown">command</span></div>
-                        <div class="content">This command is used to do something.</div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="contentSection">
-            <div class="header">
-                <div class="title">Changes</div>
-                <div class="content">Tweaked a couple of commands.</div>
-            </div>
-            <div class="contentBody">
-                <div class="content">Template change</div>
-            </div>
-        </div>
-        <div class="contentSection">
-            <div class="header">
-                <div class="title">Removals</div>
-                <div class="content">Some things just couldn't stay in this world.</div>
-            </div>
-            <div class="contentBody">
-                <div class="content">Template change</div>
-            </div>
-        </div>
-        <div class="contentSection">
-            <div class="header">
-                <div class="title">Fixes</div>
-                <div class="content">There weren't that many issues this time around.</div>
-            </div>
-            <div class="contentBody">
-                <div class="content">Template change</div>
-            </div>
+<div class="pageContent blockContent fixedMenuPadding">
+    <div class="contentHeader" id="internal-gears">
+        <div class="header">
+            <div class="title">8.25.2020</div>
+            <div class="subtitle">Internal Gears</div>
+            <div class="content">This update overhauls specific parts of the item framework and simplifies the recipe book!</div>
         </div>
     </div>
+    <div class="contentSection">
+        <div class="header">
+            <div class="title">Additions</div>
+            <div class="content">All aboard the content train!</div>
+        </div>
+        <div class="contentBody">
+            <ul class="contentList">
+                <li>
+                    <div class="title"><span class="bullet">+</span>Added a new shop: <span class="important">Booster's Blight</span></div>
+                    <div class="content">This shop offers a small collection of boosters, which are used to increase income rates for various activities.</div>
+                </li>
+                <li>
+                    <div class="title"><span class="bullet">+</span>Added a new item: <span class="important">Gift Wrap</span></div>
+                    <div class="content">This item can be used to conceal a possible gift for other users.</div>
+                </li>
+                <li>
+                    <div class="title"><span class="bullet">+</span>Added a new command: <span class="markdown">offers</span></div>
+                    <div class="content">This command was introduced to allow you preview any incoming trade offers you might have received.</div>
+                </li>
+                <li>
+                    <div class="title"><span class="bullet">+</span>Introduced support for item sealables</div>
+                    <div class="content">Sealables are used to hide the contents of an item. This can be used alongside locks to require that specific criteria is met before it can be opened.</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="contentSection">
+        <div class="header">
+            <div class="title">Changes</div>
+            <div class="content">Nothing like a little polish can't fix.</div>
+        </div>
+        <div class="contentBody">
+            <ul class="contentList">
+                <li>
+                    <div class="title"><span class="bullet">-</span>Tweaked <span class="important">Pocket Lawyer</span></div>
+                    <div class="content">
+                        <ul class="contentList">
+                            <li>
+                                <div class="title"><span class="bullet">-</span>Reduced value from <span class="important">1,000</span> to <span class="important">750</span></div>
+                                <div class="content">The value of this item was way too high when grouped with the <span class="important">400</span> you receive when landing on a golden slot.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="title"><span class="bullet">-</span>Tweaked recipes to reveal themselves once all of the required components are in a user's inventory</div>
+                    <div class="content">This change was made to hide recipes that the user cannot craft, which can be revealed through blueprints (unimplmented) or once all of the components are in a user's inventory.</div>
+                </li>
+                <li>
+                    <div class="title"><span class="bullet">-</span>Merged gifting mechanics into trading</div>
+                    <div class="content">This change was made since gifting is essentially trading without expecting anything in return.</div>
+                </li>
+                <li>
+                    <div class="title"><span class="bullet">-</span>Implemented temporary IDs for sealed items</div>
+                    <div class="content">This change was made to allow a user to still be able to reference a specific item instance, even if it's sealed.</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="contentSection">
+        <div class="header">
+            <div class="title">Fixes</div>
+            <div class="content">The issues listed below are no longer with us.</div>
+        </div>
+        <div class="contentBody">
+            <ul class="contentList">
+                <li>
+                    <div class="title"><span class="bullet">-</span>Fixed issue where shops would not store user purchase history</div>
+                </li>
+                <li>
+                    <div class="title"><span class="bullet">-</span>Fixed issue where shops would use the default name when displaying on entry</div>
+                </li>
+                <li>
+                    <div class="title"><span class="bullet">-</span>Fixed issue where inventories would not show the correct remaining capacity</div>
+                </li>
+                <li>
+                    <div class="title"><span class="bullet">-</span>Fixed issue where item expirations would not be applied correctly</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div class="pageFooterShadow"></div>
 </body>
 </html>

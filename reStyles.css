@@ -6,7 +6,6 @@
     background: linear-gradient(180deg,
                 var(--col-dimmer) 0,
                 var(--col-min) 100%);
-	height: 100vh;			
 }
 
 /* Color overrides */
@@ -170,6 +169,10 @@ a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, d
     vertical-align: baseline;
 }
 
+.minBorder {
+    border: 8px solid var(--col-min);
+}
+
 li {
     list-style-type: none;
 }
@@ -183,9 +186,10 @@ li {
 
 .bgDimmerMin {
     background: linear-gradient(180deg, var(--col-dimmer) 0, var(--col-min) 100%);
+    background-attachment: fixed;
 }
 
-marginBottom {
+.marginBottom {
     margin-bottom: 8px;
 }
 
@@ -201,15 +205,35 @@ marginBottom {
     font-size: 24px;
 }
 
+.fixedMenuPadding {
+    margin-top: 104px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+}
+
 .pageMenu {
     display: flex;
     width: 100%;
-    min-width: 972px;
+    min-width: 100%;
     background: linear-gradient(180deg, var(--col-dim) 0, var(--col-dimmer) 100%);
-    height: 88px;
+    height: 80px;
+    /*! border-top: 8px solid var(--col-dimmer); */
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: center;
+    align-content: stretch;
     margin-top: 8px;
-    margin-bottom: 8px;
-    flex-wrap: no-wrap;
+}
+
+.menuBar {
+    display: flex;
+    width: calc(100% - 152px);
+    min-width: calc(100% - 152px);
+    height: 80px;
+    flex-wrap: nowrap;
     justify-content: left;
     align-items: center;
     align-content: stretch;
@@ -247,6 +271,7 @@ marginBottom {
 .menuDisabled {
     color: var(--col-bright);
     cursor: default;
+    opacity: 50%;
 }
 
 .activeBar {
@@ -266,7 +291,8 @@ marginBottom {
 
 .pageHeader {
     width: calc(100% - 16px);
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
     .pageHeader .title {
@@ -284,6 +310,13 @@ marginBottom {
         font-family: NTR, sans-serif;
         text-align: center;
     }
+
+.blockContent {
+    margin: 8px;
+    border-radius: 8px;
+    padding-bottom: 4px;
+    background: var(--col-min);
+}
 
 .pageContent .contentHeader {
     padding: 8px;
@@ -369,6 +402,29 @@ marginBottom {
         padding-left: 8px;
     }
 
+        .contentList li .contentList {
+            margin-top: 0;
+            background: none;
+        }
+
+        .contentList li .contentList li {
+            margin-left: 4px;
+        }
+
+    .contentList  li .contentList .title {
+        font-size: 18px;
+        color: var(--col-brighter);
+        display: block;
+    }
+
+    .contentList  li .contentList .title .bullet {
+        margin-right: 0;
+    }
+
+    .contentList li .contentList .content {
+        padding-top: 0;
+    }
+
     .contentList .title {
         font-size: 20px;
         color: var(--col-brighter);
@@ -389,6 +445,15 @@ marginBottom {
     margin: 8px 8px 8px 8px;
     background: var(--col-dimmer);
     border: 4px solid var(--col-max);
+}
+
+.pageFooterShadow {
+    position: fixed;
+    bottom: 0;
+
+    width: 100%;
+    height: 32px;
+    background: linear-gradient(180deg, var(--col-min-empty) 0, var(--col-min) 100%);
 }
 
 .outerLogo {
@@ -416,9 +481,17 @@ marginBottom {
 .logo {
     display: flex;
     position: relative;
-    margin-left: 8px;
+    /*margin-left: 8px;*/
     width: 144px;
     height: 104px;
+}
+
+.logoBase {
+    display: flex;
+    margin-left: 8px;
+    position: relative;
+    width: 144px;
+    height: 96px;
 }
 
 .innerBorderShading {

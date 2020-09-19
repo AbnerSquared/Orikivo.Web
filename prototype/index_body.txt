@@ -4,3 +4,57 @@ Design your location, meet newcomers, and learn about what the meaning of life m
 
 a helping hand
 Orikivo exists to serve and assist those in need. Experiment with dozens of utility kits that aid you in several situations.
+
+<div class="pageContent blockContent">
+        <div class="contentHeader" id="exponential-expansion">
+            <div class="header">
+                <div class="title">9.5.2020</div>
+                <div class="subtitle">Exponential Expansion</div>
+                <div class="content">This update is simply too much!</div>
+            </div>
+        </div>
+        <div class="contentSection">
+            <div class="header">
+                <div class="title">Additions</div>
+            </div>
+            <div class="contentBody">
+                <ul class="contentList">
+                    <li>
+                        <div class="title"><span class="bullet">+</span>Added a new casino game mode: <span class="important">Roulette</span></div>
+                        <div class="content">Roulette has a betting cap of <span class="important">1,000</span></div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">+</span>Added a new command: <span class="markdown">command</span></div>
+                        <div class="content">This command is used to do something.</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contentSection">
+            <div class="header">
+                <div class="title">Changes</div>
+                <div class="content">Tweaked a couple of commands.</div>
+            </div>
+            <div class="contentBody">
+                <div class="content">Template change</div>
+            </div>
+        </div>
+        <div class="contentSection">
+            <div class="header">
+                <div class="title">Removals</div>
+                <div class="content">Some things just couldn't stay in this world.</div>
+            </div>
+            <div class="contentBody">
+                <div class="content">Template change</div>
+            </div>
+        </div>
+        <div class="contentSection">
+            <div class="header">
+                <div class="title">Fixes</div>
+                <div class="content">There weren't that many issues this time around.</div>
+            </div>
+            <div class="contentBody">
+                <div class="content">Template change</div>
+            </div>
+        </div>
+    </div>

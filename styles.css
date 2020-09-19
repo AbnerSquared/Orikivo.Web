@@ -36,8 +36,8 @@
 ::-webkit-scrollbar { width: var(--default-width); height: var(--default-width); }
 .header-list ::-webkit-scrollbar { width: var(--small-width); height: var(--small-width); }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background-color: var(--color4); transition-duration: var(--default-duration); }
-::-webkit-scrollbar-thumb:hover { background-color: var(--color1); transition-duration: var(--default-duration); }
+::-webkit-scrollbar-thumb { background-color: var(--color4); transition-duration: 0.2s; }
+::-webkit-scrollbar-thumb:hover { background-color: var(--color1); transition-duration: 0.2s; }
 ::-webkit-scrollbar-corner { background-color: var(--color1); }
 
 a { text-decoration: none; color:inherit; }
