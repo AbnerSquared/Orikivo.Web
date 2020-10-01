@@ -7,9 +7,9 @@
     <link rel="stylesheet" type="text/css" href="../assets/constants.css">
     <link rel="stylesheet" type="text/css" href="../reStyles.css">
 </head>
-<body class="arcadia theme-glass bgDimmerMin">
+<body class="arcadia theme-glass gradientDimmerMin">
     <div class="pageMenu fixed">
-        <div class="arcadia logoBase">
+        <div class="arcadia logo">
             <div class="outerLogo">
                 <div class="innerLogo">
                     <div class="innerBorderShading"></div>
@@ -28,100 +28,295 @@
             <div class="menuButton menuDisabled">VOTE</div>
         </div>
     </div>
-    <div class="pageHeader fixedMenuPadding">
-        <div class="title">Changelogs</div>
-        <div class="subtitle">This is where all of the previous updates are located.</div>
-    </div>
-<div class="pageContent blockContent fixedMenuPadding">
-    <div class="contentHeader" id="internal-gears">
-        <div class="header">
-            <div class="title">8.25.2020</div>
-            <div class="subtitle">Internal Gears</div>
-            <div class="content">This update overhauls specific parts of the item framework and simplifies the recipe book!</div>
-        </div>
-    </div>
-    <div class="contentSection">
-        <div class="header">
-            <div class="title">Additions</div>
-            <div class="content">All aboard the content train!</div>
-        </div>
-        <div class="contentBody">
-            <ul class="contentList">
-                <li>
-                    <div class="title"><span class="bullet">+</span>Added a new shop: <span class="important">Booster's Blight</span></div>
-                    <div class="content">This shop offers a small collection of boosters, which are used to increase income rates for various activities.</div>
-                </li>
-                <li>
-                    <div class="title"><span class="bullet">+</span>Added a new item: <span class="important">Gift Wrap</span></div>
-                    <div class="content">This item can be used to conceal a possible gift for other users.</div>
-                </li>
-                <li>
-                    <div class="title"><span class="bullet">+</span>Added a new command: <span class="markdown">offers</span></div>
-                    <div class="content">This command was introduced to allow you preview any incoming trade offers you might have received.</div>
-                </li>
-                <li>
-                    <div class="title"><span class="bullet">+</span>Introduced support for item sealables</div>
-                    <div class="content">Sealables are used to hide the contents of an item. This can be used alongside locks to require that specific criteria is met before it can be opened.</div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="contentSection">
-        <div class="header">
-            <div class="title">Changes</div>
-            <div class="content">Nothing like a little polish can't fix.</div>
-        </div>
-        <div class="contentBody">
-            <ul class="contentList">
-                <li>
-                    <div class="title"><span class="bullet">-</span>Tweaked <span class="important">Pocket Lawyer</span></div>
-                    <div class="content">
-                        <ul class="contentList">
-                            <li>
-                                <div class="title"><span class="bullet">-</span>Reduced value from <span class="important">1,000</span> to <span class="important">750</span></div>
-                                <div class="content">The value of this item was way too high when grouped with the <span class="important">400</span> you receive when landing on a golden slot.</div>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div class="title"><span class="bullet">-</span>Tweaked recipes to reveal themselves once all of the required components are in a user's inventory</div>
-                    <div class="content">This change was made to hide recipes that the user cannot craft, which can be revealed through blueprints (unimplmented) or once all of the components are in a user's inventory.</div>
-                </li>
-                <li>
-                    <div class="title"><span class="bullet">-</span>Merged gifting mechanics into trading</div>
-                    <div class="content">This change was made since gifting is essentially trading without expecting anything in return.</div>
-                </li>
-                <li>
-                    <div class="title"><span class="bullet">-</span>Implemented temporary IDs for sealed items</div>
-                    <div class="content">This change was made to allow a user to still be able to reference a specific item instance, even if it's sealed.</div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="contentSection">
-        <div class="header">
-            <div class="title">Fixes</div>
-            <div class="content">The issues listed below are no longer with us.</div>
-        </div>
-        <div class="contentBody">
-            <ul class="contentList">
-                <li>
-                    <div class="title"><span class="bullet">-</span>Fixed issue where shops would not store user purchase history</div>
-                </li>
-                <li>
-                    <div class="title"><span class="bullet">-</span>Fixed issue where shops would use the default name when displaying on entry</div>
-                </li>
-                <li>
-                    <div class="title"><span class="bullet">-</span>Fixed issue where inventories would not show the correct remaining capacity</div>
-                </li>
-                <li>
-                    <div class="title"><span class="bullet">-</span>Fixed issue where item expirations would not be applied correctly</div>
-                </li>
-            </ul>
-        </div>
-    </div>
+<div class="pageHeader fixedMenuPadding" id="busted-checkmate">
+    <div class="title">Changelogs</div>
+    <div class="subtitle">This is where all of the previous updates are located.</div>
 </div>
+    <div class="pageContent blockContent fillMin">
+        <div class="contentHeader">
+            <div class="header">
+                <div class="title">9.30.2020</div>
+                <div class="subtitle">Busted Checkmate</div>
+                <div class="content">This update introduces a new game mode, casino mode, multiplayer improvements, additions, and an incredible amount of refined mechanics, fixes, and improvements!</div>
+            </div>
+        </div>
+        <div class="contentSection">
+            <div class="header">
+                <div class="title">Additions</div>
+                <div class="content">All aboard the content train!</div>
+            </div>
+            <div class="contentBody">
+                <ul class="contentList">
+                    <li>
+                        <div class="title"><span class="bullet">+</span>Added a new casino game mode: <span class="important">Blackjack</span></div>
+                        <div class="content">Blackjack is a classic casino game with a little bit of strategy. Pave the way to profitable success!</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">+</span>Added a new game mode: <span class="important">Chess</span></div>
+                        <div class="content">As the third and final game for launch week, this classic offers a strategic-side to the multiplayer pool.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">+</span>Added commands to view game details (<span class="markdown">games</span>, <span class="markdown">game</span>)</div>
+                        <div class="content">These commands provide new ways to view a lot more about a game, including the specific IDs for each ruleset.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">+</span>Added commands for research (<span class="markdown">research</span>, <span class="markdown">researchinfo</span>)</div>
+                        <div class="content">Researching allows and provides new ways items can be used entirely.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">+</span>Added a command to sell items directly to a shop: <span class="markdown">sell</span></div>
+                        <div class="content">Since it may have been tedious to have to constantly enter shops just to sell an item, this provides a shortcut for that.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">+</span>Added a command to view current experience: <span class="markdown">level</span></div>
+                        <div class="content">This allows you to view your current level on <span class="important">Arcadia</span>.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">+</span>Added experience system</div>
+                        <div class="content">This long-time missing feature has finally been introduced. Gaining levels is now possible.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">+</span>Implemented vendor system for shops</div>
+                        <div class="content">This system sets up the framework for shops to have varied vendors hosting the store. Each one has different dialog, alongside simple personalities that can be utilized to gain an advantage when selling items.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">+</span>Implemented tier mechanics for shops</div>
+                        <div class="content">This mechanics is used to expose or hide specific items from a shop's catalog when a user increases their tier in a shop. Think of it as a local level system for a specific shop that introduces new stock selections when it is increased.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">+</span>Introduced spectator support for game servers</div>
+                        <div class="content">Spectating is now available to use, as long as the specified game supports it.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">+</span>Introduced kick mechanics for game servers</div>
+                        <div class="content">The host of a game server can now kick players.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">+</span>Introduced wager parsing for casino game modes</div>
+                        <div class="content">This now allows a user to specify several forms of a value (such as <span class="markdown">50%</span>, <span class="markdown">all</span>, and <span class="markdown">half</span>) instead of only its raw form.</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contentSection">
+            <div class="header">
+                <div class="title">Changes</div>
+                <div class="content">Nothing like a little polish can't fix.</div>
+            </div>
+            <div class="contentBody">
+                <ul class="contentList">
+                    <li>
+                        <div class="title"><span class="bullet">-</span>Finalized guide: <span class="important">Beginning Your Journey</span></div>
+                        <div class="content">This guide was created to allow new users to understand how <span class="important">Arcadia</span> is supposed to be utilized.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">-</span>Moved recently unlocked merit to instead show in the command <span class="markdown">merits</span></div>
+                        <div class="content">This was kind of pointless to showcase in the profile, so it was now moved over to the merit menu, replacing the previously set subtitle.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">-</span>Optimize game server logic when deleting messages</div>
+                        <div class="content">This change makes it so that constantly deleted messages that eventually ratelimit the bot will now instead contribute to the refresh counter for a server display. This should reduce the number of soft-freezes that occur.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">-</span>Reduced win cap from <span class="important">100</span>% to <span class="important">70</span>% in <span class="important">Doubler</span></div>
+                        <div class="content">This was changed since losing streaks increase the win rate for this mode. If someone were to be that unlucky, it would've guaranteed a win.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">-</span>Tweaked <span class="important">Tinkerer</span> (<span class="important">Merit</span>) to now be called <span class="important">Tinker Tot</span></div>
+                        <div class="content">This may be reverted, but I personally found <span class="important">Tinkerer</span> to sound weird.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">-</span>Tweaked <span class="important">Casino Field Day</span> (<span class="important">Quest</span>):</div>
+                        <div class="content">
+                            <ul class="contentList">
+                                <li>
+                                    <div class="title"><span class="bullet">-</span>Increased experience output from <span class="important">20</span> to <span class="important">50</span></div>
+                                </li>
+                                <li>
+                                    <div class="title"><span class="bullet">-</span>Increased money output from <span class="important">20</span> to <span class="important">25</span></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">-</span>Tweaked <span class="important">Trivial Pursuit</span> (<span class="important">Quest</span>):</div>
+                        <div class="content">
+                            <ul class="contentList">
+                                <li>
+                                    <div class="title"><span class="bullet">-</span>Increased experience output from <span class="important">20</span> to <span class="important">50</span></div>
+                                </li>
+                                <li>
+                                    <div class="title"><span class="bullet">-</span>Increased money output from <span class="important">20</span> to <span class="important">25</span></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">-</span>Tweaked <span class="important">Weekly Attendance</span> (<span class="important">Quest</span>):</div>
+                        <div class="content">
+                            <ul class="contentList">
+                                <li>
+                                    <div class="title"><span class="bullet">-</span>Increased experience output from <span class="important">50</span> to <span class="important">500</span></div>
+                                </li>
+                                <li>
+                                    <div class="title"><span class="bullet">-</span>Increased money output from <span class="important">100</span> to <span class="important">105</span></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">-</span>Tweaked <span class="important">Chromatic Cove</span> (<span class="important">Shop</span>) to utilize tier mechanics</div>
+                        <div class="content">To make use of the tier system that was introduced, a couple of entries were tweaked to utilize it.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">-</span>Updated command <span class="markdown">catalog all</span> to now group items in their respective group</div>
+                        <div class="content">This minor change makes it so that items are easier to sift through, as they are now grouped together instead of simply listing them out.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">-</span>Updated command <span class="markdown">claim</span> to display available merits to claim when an ID is unspecified</div>
+                        <div class="content">This enhancement was made to allow users to know exactly which merits they are currently able to claim, without having to skim through the catalog.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">-</span>Updated command <span class="markdown">config</span> to be much easier to utilize and read</div>
+                        <div class="content">This command has essentially been completely overhauled to be much cleaner in both design and usage. Tooltips are now applied to give you a better understanding of what each option does.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">-</span>Updated command <span class="markdown">inventory</span> to support pagination and group counters</div>
+                        <div class="content">This change was made to finally allow a user to view items past the base page limit, alongside introducing counters to know how many of each item you have in a specific group.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">-</span>Updated command <span class="markdown">leaderboard</span> to display categories and tooltips</div>
+                        <div class="content">This should now make it easier for a user to know how to use searches and filters on the leaderboard.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">-</span>Updated formatting in several commands</div>
+                        <div class="content">Some commands were lacking in terms of design and polish, and were given a complete overhaul. The most notable ones are <span class="markdown">help</span>, <span class="markdown">merits</span>, and <span class="markdown">config</span>.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">-</span>Updated formatting for page counters</div>
+                        <div class="content">This simple change made page counters look cleaner.</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contentSection">
+            <div class="header">
+                <div class="title">Fixes</div>
+                <div class="content">The issues listed below are no longer with us.</div>
+            </div>
+            <div class="contentBody">
+                <ul class="contentList">
+                    <li>
+                        <div class="title"><span class="bullet">-</span>Fixed issue where notifications were being included regardless of a user's config</div>
+                        <div class="content">This should now correctly filter out notifications that the user does not wish to view.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">-</span>Fixed issue where tooltips were not being hidden in several commands</div>
+                        <div class="content">This should now hide all tooltips if a user has disabled them.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">-</span>Fixed formatting issues in several commands</div>
+                        <div class="content">This is paired with the <span class="important">Updated formatting in several commands</span> change.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">-</span>Fixed issue where several sources were not granting experience</div>
+                        <div class="content">This should now allow all forms of experience to be granted to the user.</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="pageSpacer" id="internal-gears"></div>
+    <div class="pageContent blockContent fillMin">
+        <div class="contentHeader">
+            <div class="header">
+                <div class="title">8.25.2020</div>
+                <div class="subtitle">Internal Gears</div>
+                <div class="content">This update overhauls specific parts of the item framework and simplifies the recipe book!</div>
+            </div>
+        </div>
+        <div class="contentSection">
+            <div class="header">
+                <div class="title">Additions</div>
+                <div class="content">All aboard the content train!</div>
+            </div>
+            <div class="contentBody">
+                <ul class="contentList">
+                    <li>
+                        <div class="title"><span class="bullet">+</span>Added a new shop: <span class="important">Booster's Blight</span></div>
+                        <div class="content">This shop offers a small collection of boosters, which are used to increase income rates for various activities.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">+</span>Added a new item: <span class="important">Gift Wrap</span></div>
+                        <div class="content">This item can be used to conceal a possible gift for other users.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">+</span>Added a new command: <span class="markdown">offers</span></div>
+                        <div class="content">This command was introduced to allow you preview any incoming trade offers you might have received.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">+</span>Introduced support for item sealables</div>
+                        <div class="content">Sealables are used to hide the contents of an item. This can be used alongside locks to require that specific criteria is met before it can be opened.</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contentSection">
+            <div class="header">
+                <div class="title">Changes</div>
+                <div class="content">Nothing like a little polish can't fix.</div>
+            </div>
+            <div class="contentBody">
+                <ul class="contentList">
+                    <li>
+                        <div class="title"><span class="bullet">-</span>Tweaked <span class="important">Pocket Lawyer</span></div>
+                        <div class="content">
+                            <ul class="contentList">
+                                <li>
+                                    <div class="title"><span class="bullet">-</span>Reduced value from <span class="important">1,000</span> to <span class="important">750</span></div>
+                                    <div class="content">The value of this item was way too high when grouped with the <span class="important">400</span> you receive when landing on a golden slot.</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">-</span>Tweaked recipes to reveal themselves once all of the required components are in a user's inventory</div>
+                        <div class="content">This change was made to hide recipes that the user cannot craft, which can be revealed through blueprints (unimplmented) or once all of the components are in a user's inventory.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">-</span>Merged gifting mechanics into trading</div>
+                        <div class="content">This change was made since gifting is essentially trading without expecting anything in return.</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">-</span>Implemented temporary IDs for sealed items</div>
+                        <div class="content">This change was made to allow a user to still be able to reference a specific item instance, even if it's sealed.</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contentSection">
+            <div class="header">
+                <div class="title">Fixes</div>
+                <div class="content">The issues listed below are no longer with us.</div>
+            </div>
+            <div class="contentBody">
+                <ul class="contentList">
+                    <li>
+                        <div class="title"><span class="bullet">-</span>Fixed issue where shops would not store user purchase history</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">-</span>Fixed issue where shops would use the default name when displaying on entry</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">-</span>Fixed issue where inventories would not show the correct remaining capacity</div>
+                    </li>
+                    <li>
+                        <div class="title"><span class="bullet">-</span>Fixed issue where item expirations would not be applied correctly</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="pageFooterShadow"></div>
 </body>
 </html>

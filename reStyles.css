@@ -2,59 +2,51 @@
 @import "assets/constants.css";
 @import url('https://fonts.googleapis.com/css2?family=NTR&family=Viga&family=Libre+Barcode+39&family=Signika:wght@700&display=swap');
 
-.bgDimmerMin {
-    background: linear-gradient(180deg,
-                var(--col-dimmer) 0,
-                var(--col-min) 100%);
+.gradientDimmerMin {
+    background: linear-gradient(180deg, var(--col-dimmer) 0, var(--col-min) 100%);
+    background-attachment: fixed;
 }
 
 /* Color overrides */
-.backMax {
+.fillMax {
     background: var(--col-max);
 }
 
-.bgBrighter {
+.fillBrighter {
     background: var(--col-brighter);
 }
 
-.bgBright {
+.fillBright {
     background: var(--col-bright);
 }
 
-.bgStandard {
+.fillStandard {
     background: var(--col-standard);
 }
 
-.bgStandardDim {
+.fillStandardDim {
     background: var(--col-standard-dim);
 }
 
-.bgDim {
+.fillDim {
     background: var(--col-dim);
 }
 
-.bgDimmer {
+.fillDimmer {
     background: var(--col-dimmer);
 }
 
-.bgMin {
+.fillMin {
     background: var(--col-min);
 }
 
 /* Logo classes */
-.logo {
-    position: relative;
-    width: 144px;
-    height: 104px;
-}
 
 .innerBorderShading {
     position: relative;
     width: 120px;
     height: 8px;
-    background: linear-gradient(180deg,
-                var(--col-min) 0,
-                var(--col-min-empty) 100%)
+    background: linear-gradient(180deg, var(--col-min) 0, var(--col-min-empty) 100%)
 }
 
 .primaryText {
@@ -150,7 +142,7 @@
 }
 
 
-.flatLogoShading {
+.logoShadow {
     position: absolute;
     width: 144px;
     height: 8px;
@@ -184,11 +176,6 @@ li {
         padding: 0;
     }
 
-.bgDimmerMin {
-    background: linear-gradient(180deg, var(--col-dimmer) 0, var(--col-min) 100%);
-    background-attachment: fixed;
-}
-
 .marginBottom {
     margin-bottom: 8px;
 }
@@ -205,8 +192,17 @@ li {
     font-size: 24px;
 }
 
+.pageSpacer {
+    height: 104px;
+    width: 100%;
+}
+
 .fixedMenuPadding {
     margin-top: 104px;
+}
+
+.relativeMenuPadding {
+    margin-top: 16px;
 }
 
 .fixed {
@@ -220,12 +216,16 @@ li {
     min-width: 100%;
     background: linear-gradient(180deg, var(--col-dim) 0, var(--col-dimmer) 100%);
     height: 80px;
-    /*! border-top: 8px solid var(--col-dimmer); */
     flex-wrap: nowrap;
     justify-content: left;
     align-items: center;
     align-content: stretch;
     margin-top: 8px;
+}
+
+.pageMenu .logo {
+    margin-left: 8px;
+    height: 96px;
 }
 
 .menuBar {
@@ -315,7 +315,16 @@ li {
     margin: 8px;
     border-radius: 8px;
     padding-bottom: 4px;
-    background: var(--col-min);
+}
+
+.leftFocus {
+    width: 50%;
+    float: left;
+}
+
+.rightFocus {
+    width: 50%;
+    float: right;
 }
 
 .pageContent .contentHeader {
@@ -407,23 +416,23 @@ li {
             background: none;
         }
 
-        .contentList li .contentList li {
-            margin-left: 4px;
-        }
+            .contentList li .contentList li {
+                margin-left: 4px;
+            }
 
-    .contentList  li .contentList .title {
-        font-size: 18px;
-        color: var(--col-brighter);
-        display: block;
-    }
+            .contentList li .contentList .title {
+                font-size: 18px;
+                color: var(--col-brighter);
+                display: block;
+            }
 
-    .contentList  li .contentList .title .bullet {
-        margin-right: 0;
-    }
+                .contentList li .contentList .title .bullet {
+                    margin-right: 0;
+                }
 
-    .contentList li .contentList .content {
-        padding-top: 0;
-    }
+            .contentList li .contentList .content {
+                padding-top: 0;
+            }
 
     .contentList .title {
         font-size: 20px;
@@ -437,23 +446,20 @@ li {
         color: var(--col-bright);
     }
 
+.logo {
+    display: flex;
+    position: relative;
+    width: 144px;
+    height: 104px;
+}
+
 .innerLogo {
     position: relative;
     width: 120px;
     height: 72px;
-    /*       T R B L */
     margin: 8px 8px 8px 8px;
     background: var(--col-dimmer);
     border: 4px solid var(--col-max);
-}
-
-.pageFooterShadow {
-    position: fixed;
-    bottom: 0;
-
-    width: 100%;
-    height: 32px;
-    background: linear-gradient(180deg, var(--col-min-empty) 0, var(--col-min) 100%);
 }
 
 .outerLogo {
@@ -463,7 +469,7 @@ li {
     background: linear-gradient(180deg, var(--col-dimmer) 0, var(--col-min) 100%);
 }
 
-.flatLogoShading {
+.logoShadow {
     position: absolute;
     width: 144px;
     height: 8px;
@@ -471,27 +477,19 @@ li {
     margin-top: 96px;
 }
 
+.pageFooterShadow {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 32px;
+    background: linear-gradient(180deg, var(--col-min-empty) 0, var(--col-min) 100%);
+}
+
 .arcadia .secondaryText {
     height: 24px;
     font-family: Signika;
     font-weight: 700;
     font-size: 26px;
-}
-
-.logo {
-    display: flex;
-    position: relative;
-    /*margin-left: 8px;*/
-    width: 144px;
-    height: 104px;
-}
-
-.logoBase {
-    display: flex;
-    margin-left: 8px;
-    position: relative;
-    width: 144px;
-    height: 96px;
 }
 
 .innerBorderShading {
@@ -514,7 +512,6 @@ li {
     text-align: center;
     color: var(--col-max);
     text-shadow: 0 4px 4px var(--col-min-partial);
-    /*! padding: 0 50%; */
 }
 
 .secondaryText {
@@ -532,14 +529,20 @@ li {
     text-shadow: 0 4px 4px var(--col-min-partial);
 }
 
+/* <span> classes */
+
 .important {
     color: var(--col-max);
 }
 
 .markdown {
     background: var(--col-standard-dim);
+    height: inherit;
+    display: inline-block;
     padding-left: 4px;
     padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     border-radius: 4px;
     color: var(--col-max);
 }
