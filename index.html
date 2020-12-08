@@ -6,8 +6,9 @@
     <link rel="stylesheet" type="text/css" href="assets/empty.css">
     <link rel="stylesheet" type="text/css" href="assets/constants.css">
     <link rel="stylesheet" type="text/css" href="reStyles.css">
+    <script src="videoHover.js"></script>
 </head>
-<body class="arcadia theme-glass gradientDimmerMin">
+<body class="arcadia theme-glass gradientDimmerMin fixedFill">
     <div class="pageMenu">
         <div class="arcadia logo">
             <div class="outerLogo">
@@ -24,86 +25,251 @@
             <div class="menuButton menuDisabled">COMMANDS</div>
             <div class="menuButton menuDisabled">HISTORY</div>
             <div class="menuButton menuDisabled">CONTACT</div>
-            <a href="invites/arcadia.html" class="menuButton">INVITE</a>
+            <a href="https://discord.com/oauth2/authorize?client_id=686093964029329413&scope=bot&permissions=388160" class="menuButton">INVITE</a>
             <div class="menuButton menuDisabled">VOTE</div>
         </div>
     </div>
+    <div class="spacer tall"></div>
     <div class="pageHeader relativeMenuPadding">
         <div class="title">Welcome to the Arcade.</div>
-        <div class="subtitle"><span class="important">Orikivo Arcade</span> is a Discord bot that contains an ever-growing collection of fun mechanics and multiplayer sessions.</div>
+        <div class="subtitle"><span class="important">Orikivo Arcade</span> is a Discord bot that contains an ever-growing collection of fun mechanics and multiplayer games.</div>
     </div>
-    <div class="pageContent">
-    <div class="contentHeader">
-        <div class="header">
-            <div class="subtitle">Arcadia is hibernating.</div>
-            <div class="content">Stay tuned.</div>
+    <div class="pageContent maxWidth">
+        
+        <div class="spacer tall"></div>
+        <div class="contentSection center padded rounded fillMin thinOutline outlineMax">
+            <div class="header topHalfMargin">
+                <div class="title">Multiplayer</div>
+                <div class="content">Games galore!</div>
+            </div>
+            <div class="contentBody padded">
+                <div class="content">As one of the primary focal points for this bot, Orikivo Arcade is equipped to support game servers with multiple channel connections from anywhere on Discord.</div>
+            </div>
         </div>
-    </div>
-        </div>
-            <div class="pageContent" style="display: none">
-                <div class="contentHeader">
-                    <div class="header">
-                        <div class="subtitle">What does Arcadia do?</div>
-                        <div class="content">A wide assortment of things. Look below to get a better insight on each core mechanic.</div>
+        <div class="contentSection center">
+            <div class="innerSection rounded padded fitMediaWidth forceMediaHeight left fillDimmer thinOutline outlineStandard">
+                <div class="header topHalfMargin">
+                    <div class="title">Trivia</div>
+                    <div class="content">A casual game where a group of players can test their wit with random knowledge.
                     </div>
                 </div>
             </div>
-            <div class="pageContent blockContent fillMin" style="display: none">
-                <div class="contentHeader">
-                    <div class="header">
-                        <div class="title">Multiplayer</div>
-                        <div class="content">As one of the primary focal points for this bot, <span class="important">Arcadia</span> is equipped to support game servers with multiple channel connections! </div>
-                    </div>
+            <div class="mediaContainer right">
+                <div class="overlayHover">
+                    <div class="content">Hover to View</div>
                 </div>
+                <video id="video" muted loop>
+                    <source src="assets/examples/example_trivia.mp4" type="video/mp4"></source>
+                </video>
+            </div>
+        </div>
+        <div class="spacer tall"></div>
+        <div class="contentSection center padded rounded fillMin thinOutline outlineMax">
+            <div class="header topHalfMargin">
+                <div class="title">Casino</div>
+                <div class="content">Manipulate the economy!</div>
+            </div>
+            <div class="contentBody padded">
+                <div class="content">The casino is a manipulative facility commonly used to attract those in desperate need of Orite. While some games offer rewards never shown to a living soul, one must keep in mind the risks that may follow. Falling into debt is no laughing matter. By the way, come look at the growing assortment of fun machines!</div>
+            </div>
+        </div>
 
-                <div class="contentSection">
-                    <div class="header">
-                        <div class="title">Chess</div>
-                        <div class="content">A classic strategy game that challenges even the wisest. Tough it out with a worthy opponent.</div>
-                    </div>
-                    <div class="header">
-                        <div class="title">Trivia</div>
-                        <div class="content">A casual game where a small group of people can all answer questions about random things.</div>
-                    </div>
-                    <div class="header">
-                        <div class="title">Werewolf (Beta)</div>
-                        <div class="content">A social manipulation game where the villagers have to eliminate the werewolves before they all become a feast.</div>
+        <div class="contentSection center">
+            <div class="innerSection rounded padded fitMediaWidth forceMediaHeight left fillDimmer thinOutline outlineStandard">
+                <div class="header topHalfMargin">
+                    <div class="title">Blackjack</div>
+                    <div class="content">A game mode that tops your luck off with a hint of strategy. Pave the way to profitable success!</div>
+                </div>
+            </div>
+            <div class="mediaContainer right">
+                <div class="overlayHover">
+                    <div class="content">Hover to View</div>
+                </div>
+                <video id="video" muted loop>
+                    <source src="assets/examples/example_blackjack.mp4" type="video/mp4"></source>
+                </video>
+            </div>
+        </div>
+        <div class="contentSection center">
+            <div class="innerSection rounded padded fitMediaWidth forceMediaHeight right fillDimmer thinOutline outlineStandard">
+                <div class="header topHalfMargin">
+                    <div class="title">Doubly</div>
+                    <div class="content">An original mode from which you have to guess when the timer is going to stop. For each successful tick, your wager is doubled!</div>
+                </div>
+            </div>
+            <div class="mediaContainer left">
+                <div class="overlayHover">
+                    <div class="content">Hover to View</div>
+                </div>
+                <video id="video" muted loop>
+                    <source src="assets/examples/example_doubly.mp4" type="video/mp4"></source>
+                </video>
+            </div>
+        </div>
+        <div class="contentSection center">
+            <div class="innerSection rounded padded fitMediaWidth forceMediaHeight left fillDimmer thinOutline outlineStandard">
+                <div class="header topHalfMargin">
+                    <div class="title">Gimi</div>
+                    <div class="content">A twist on the 'give or take' approach that uses Orite instead. You have a random chance to receive blessings or dangerous curses.
                     </div>
                 </div>
             </div>
-            <div class="pageContent blockContent fillMin" style="display: none">
-                <div class="contentHeader">
-                    <div class="header">
-                        <div class="title">Casino</div>
-                        <div class="content">A place commonly used to attract the desperate in need of Orite. While some games offer rewards never seen by a living soul, one must keep in mind the risks that may follow. Falling into debt is no laughing matter. On the other hand, we have a growing assortment of modes!</div>
-                    </div>
+            <div class="mediaContainer right">
+                <div class="overlayHover">
+                    <div class="content">Hover to View</div>
                 </div>
-                <div class="contentSection">
-                    <div class="header">
-                        <div class="title">Blackjack</div>
-                        <div class="content">A game mode that provides a mix of strategy alongside luck. Pave the way to profitable success!</div>
-                    </div>
-                    <div class="header">
-                        <div class="title">Doubler</div>
-                        <div class="content">An interesting mode that allows you to guess where the tick is going to stop at. For each successful tick, your bet is doubled!</div>
-                    </div>
-                    <div class="header">
-                        <div class="title">Gimi</div>
-                        <div class="content">A common 'give or take' approach that uses <span class="important">Orite</span> instead. You have a random chance to win or lose a lot.</div>
-                    </div>
-                    <div class="header">
-                        <div class="title">Roulette</div>
-                        <div class="content">A mode that allows you to bet in a wide variety of styles. A random slot is selected, and based on your style, you can earn plenty of chips!</div>
+                <video id="video" muted loop>
+                    <source src="assets/examples/example_gimi.mp4" type="video/mp4"></source>
+                </video>
+            </div>
+        </div>
+        <div class="contentSection center">
+            <div class="innerSection rounded padded fitMediaWidth forceMediaHeight right fillDimmer thinOutline outlineStandard">
+                <div class="header topHalfMargin">
+                    <div class="title">Roulette</div>
+                    <div class="content">A common game mode that allows you to decide your method of betting from a wide variety of styles. You can determine your risk based on how you want to play!
                     </div>
                 </div>
             </div>
-            <div class="pageContent blockContent fillMin" style="display: none">
-                <div class="contentHeader">
-                    <div class="header">
-                        <div class="title">Leaderboards</div>
-                        <div class="content">Yeah, this is placeholder text. Got a problem?</div>
+            <div class="mediaContainer left">
+                <div class="overlayHover">
+                    <div class="content">Hover to View</div>
+                </div>
+                <video id="video" muted loop>
+                    <source src="assets/examples/example_roulette.mp4" type="video/mp4"></source>
+                </video>
+            </div>
+        </div>
+        <div class="spacer tall"></div>
+        <div class="contentSection center padded rounded fillMin thinOutline outlineMax">
+            <div class="header topHalfMargin">
+                <div class="title">Other Features</div>
+                <div class="content">These are the unsung heroes that help make Orikivo Arcade shine!</div>
+            </div>
+            <div class="contentBody padded">
+                <div class="content">Orikivo Arcade has a wide range of mechanics that provide plenty of different ways for users to enjoy their experience!</div>
+            </div>
+        </div>
+        <div class="contentSection center">
+            <div class="innerSection rounded padded fitMediaWidth forceMediaHeight right fillDimmer thinOutline outlineStandard">
+                <div class="header topHalfMargin">
+                    <div class="title">Profiles</div>
+                    <div class="content">Design yourself in any way you wish!</div>
+                </div>
+                <div class="contentBody padded fitFullWidth">
+                    <div class="content">Alongside your base profile, you are also provided with a card showcase. Cards can be customized in plenty of ways, even to the point of redesigning the entire layout! Mix and match plenty of decorators to find your personal taste in design.
+
                     </div>
                 </div>
             </div>
+            <div class="mediaContainer left">
+                <div class="overlay"></div>
+                <img src="assets/examples/example_profile.png"/>
+            </div>
+        </div>
+        <div class="contentSection center">
+            <div class="innerSection rounded padded fitMediaWidth forceMediaHeight left fillDimmer thinOutline outlineStandard">
+                <div class="header topHalfMargin">
+                    <div class="title">Economy</div>
+                    <div class="content">A world of collection awaits!</div>
+                </div>
+                <div class="contentBody padded fitFullWidth">
+                    <div class="content">As a secondary feature, the economy system contains a variety of methods that you can utilize to gain profit or find useful items that can help you in the future! Likewise, you can trade or gift with other users to obtain materials that you might be missing or need. Expand your item catalog collection!</div>
+                </div>
+            </div>
+            <div class="mediaContainer right">
+                <div class="overlayHover">
+                    <div class="content">Hover to View</div>
+                </div>
+                <video id="video" muted loop>
+                    <source src="assets/examples/example_economy.mp4" type="video/mp4"></source>
+                </video>
+            </div>
+        </div>
+        <div class="contentSection center">
+            <div class="innerSection rounded padded fitMediaWidth forceMediaHeight left fillDimmer thinOutline outlineStandard">
+                <div class="header topHalfMargin">
+                    <div class="title">Shops</div>
+                    <div class="content">A place to spend your hard-earned income.</div>
+                </div>
+                <div class="contentBody padded fitFullWidth">
+                    <div class="content">As you grow on Orikivo Arcade, shops will become accessible to you. Each shop has a unique collection of items that can be purchased. On top of that, each shop restocks their items at the start of every new day! Make sure to check back often to see if they have anything you might enjoy.</div>
+                </div>
+            </div>
+            <div class="mediaContainer right">
+                <div class="overlayHover">
+                    <div class="content">Hover to View</div>
+                </div>
+                <video id="video" muted loop>
+                    <source src="assets/examples/example_shop.mp4" type="video/mp4"></source>
+                </video>
+            </div>
+        </div>
+        <div class="contentSection center">
+            <div class="innerSection rounded padded fitMediaWidth forceMediaHeight right fillDimmer thinOutline outlineStandard">
+                <div class="header topHalfMargin">
+                    <div class="title">Stats</div>
+                    <div class="content">Gain bragging rights!</div>
+                </div>
+                <div class="contentBody padded fitFullWidth">
+                    <div class="content"><span class="important">Orikivo Arcade</span> keeps track of a large variety of stats, from your longest winning streak in a multiplayer game, all the way to your largest loss in a single casino activity! Prove yourself by showing your stats to others, or compare and see who does better!</div>
+                </div>
+            </div>
+            <div class="mediaContainer left">
+                <div class="overlay"></div>
+                <img src="assets/examples/example_stats.png"/>
+            </div>
+        </div>
+        <div class="contentSection center">
+            <div class="innerSection rounded padded fitMediaWidth forceMediaHeight right fillDimmer thinOutline outlineStandard">
+                <div class="header topHalfMargin">
+                    <div class="title">Leaderboards</div>
+                    <div class="content">Rise to the top.</div>
+                </div>
+                <div class="contentBody padded fitFullWidth">
+                    <div class="content">As a place to prove your worth, there are five primary leaderboard sections available for monthly challenges: Income, Experience, Quests, Multiplayer, and Casino. In these categories reside the primary leader for each one, which will recieve a prize at the end of the month! Alongside those categories are custom leaderboards that can be viewed for any unique stat that Orikivo Arcade stores, which can be used for easy bragging rights.
+                    </div>
+                </div>
+            </div>
+            <div class="mediaContainer left">
+                <div class="overlay"></div>
+                <img src="assets/examples/example_leaderboard.png"/>
+            </div>
+        </div>
+        <div class="contentSection center">
+            <div class="innerSection rounded padded fitMediaWidth forceMediaHeight left fillDimmer thinOutline outlineStandard">
+                <div class="header topHalfMargin">
+                    <div class="title">Achievements</div>
+                    <div class="content">Receive rewards for your efforts!</div>
+                </div>
+                <div class="contentBody padded fitFullWidth">
+                    <div class="content">Also known as 'merits' on Orikivo Arcade, these provide a list of difficult tasks that anyone can choose to take up. Keep in mind that not every merit is shown! You might have to think outside of the box sometimes.
+                    </div>
+                </div>
+            </div>
+            <div class="mediaContainer right">
+                <div class="overlay"></div>
+                <img src="assets/examples/example_merits.png"/>
+            </div>
+        </div>
+        <div class="contentSection center">
+            <div class="innerSection rounded padded fitMediaWidth forceMediaHeight left fillDimmer thinOutline outlineStandard">
+                <div class="header topHalfMargin">
+                    <div class="title">Quests</div>
+                    <div class="content">A short-term task with plenty of benefits.</div>
+                </div>
+                <div class="contentBody padded fitFullWidth">
+                    <div class="content">As an expansion to merits, quests provide an extra layer of missions that can be worked on to give you more opportunities to earn Orite and experience! As you continue to complete quests and challenges, they begin to gradually increase in difficulty alongside reward output. Work hard and get paid for it!
+
+                    </div>
+                </div>
+            </div>
+            <div class="mediaContainer right">
+                <div class="overlay"></div>
+                <img src="assets/examples/example_quests.png"/>
+            </div>
+        </div>
+        <div class="spacer tall"></div>
+    </div>
 </body>
 </html>

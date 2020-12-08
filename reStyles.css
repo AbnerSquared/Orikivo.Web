@@ -4,7 +4,88 @@
 
 .gradientDimmerMin {
     background: linear-gradient(180deg, var(--col-dimmer) 0, var(--col-min) 100%);
+}
+
+.fixedFill {
     background-attachment: fixed;
+}
+
+.thinOutline {
+    border-style: solid;
+    border-width: 4px;
+}
+
+.thickOutline {
+    border-style: solid;
+    border-width: 8px;
+}
+
+.outlineMax {
+    border-color: var(--col-max);
+}
+
+.outlineBrighter {
+    border-color: var(--col-brighter);
+}
+
+.outlineBright {
+    border-color: var(--col-bright);
+}
+
+.outlineStandard {
+    border-color: var(--col-standard);
+}
+
+.outlineStandardDim {
+    border-color: var(--col-standard-dim);
+}
+
+.outlineDim {
+    border-color: var(--col-dim);
+}
+
+.outlineDimmer {
+    border-color: var(--col-dimmer);
+}
+
+.outlineMin {
+    border-color: var(--col-min);
+}
+
+.gradientDimmerDim {
+    background: linear-gradient(180deg, var(--col-dimmer) 0, var(--col-dim) 100%);
+}
+
+.dropShadowMax {
+    box-shadow: 0 4px 4px var(--col-max);
+}
+
+.dropShadowBrighter {
+    box-shadow: 0 4px 4px var(--col-brighter);
+}
+
+.dropShadowBright {
+    box-shadow: 0 4px 4px var(--col-bright);
+}
+
+.dropShadowStandard {
+    box-shadow: 0 4px 4px var(--col-standard);
+}
+
+.dropShadowStandardDim {
+    box-shadow: 0 4px 4px var(--col-standard-dim);
+}
+
+.dropShadowDim {
+    box-shadow: 0 4px 4px var(--col-dim);
+}
+
+.dropShadowDimmer {
+    box-shadow: 0 4px 4px var(--col-dimmer);
+}
+
+.dropShadowMin {
+    box-shadow: 0 4px 4px var(--col-min);
 }
 
 /* Color overrides */
@@ -40,13 +121,17 @@
     background: var(--col-min);
 }
 
+.gradientMinAlpha {
+    background: linear-gradient(180deg, var(--col-min) 0, var(--col-min-empty) 100%);
+}
+
 /* Logo classes */
 
 .innerBorderShading {
     position: relative;
     width: 120px;
     height: 8px;
-    background: linear-gradient(180deg, var(--col-min) 0, var(--col-min-empty) 100%)
+    background: linear-gradient(180deg, var(--col-min) 0, var(--col-min-empty) 100%);
 }
 
 .primaryText {
@@ -195,6 +280,22 @@ li {
 .pageSpacer {
     height: 104px;
     width: 100%;
+    float: left;
+}
+
+.spacer {
+    float: left;
+    width: 100%;
+}
+
+.tall {
+    height: 128px;
+}
+
+.center {
+    margin-left: 128px;
+    margin-right: 128px;
+    width: calc(100% - 256px);
 }
 
 .fixedMenuPadding {
@@ -291,8 +392,8 @@ li {
 
 .pageHeader {
     width: calc(100% - 16px);
-    margin-left: auto;
-    margin-right: auto;
+    float: left;
+    margin-left: 8px;
 }
 
     .pageHeader .title {
@@ -314,24 +415,130 @@ li {
 .blockContent {
     margin: 8px;
     border-radius: 8px;
-    padding-bottom: 4px;
 }
 
-.leftFocus {
-    width: 50%;
-    float: left;
+.rounded {
+    border-radius: 8px;
 }
 
-.rightFocus {
-    width: 50%;
-    float: right;
-}
-
-.pageContent .contentHeader {
+.padded {
+    box-sizing: border-box;
     padding: 8px;
 }
 
-    .pageContent .contentHeader .header {
+.topMargin {
+    margin-top: 8px;
+}
+
+.topHalfMargin {
+    margin-top: 4px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.fitWidth {
+    width: stretch;
+}
+
+.fitFullWidth {
+    width: 100%;
+}
+
+.maxWidth {
+    width: calc(100%);
+}
+
+.partialWidth {
+    width: 50%;
+}
+
+.fitMediaWidth {
+    width: calc(100% - 360px - 8px);
+}
+
+.forceMediaHeight {
+    height: 240px;
+}
+
+.fitMediaHeight {
+    height: calc(100% - 240px);
+}
+
+.pageContent {
+    float: left;
+}
+
+.mediaContainer {
+    width: 360px;
+    height: 240px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.mediaContainer img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.mediaContainer video {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.mediaContainer .overlay {
+    opacity: 50%;
+    background: linear-gradient(180deg, var(--col-min) 0, var(--col-min-empty) 100%);
+    z-index: 1;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    transition: 0.08s;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.mediaContainer .overlayHover {
+    opacity: 100%;
+    background: linear-gradient(180deg, var(--col-min) 0, var(--col-min-empty) 100%);
+    z-index: 1;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    transition: 0.08s;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.mediaContainer .overlay .content, .mediaContainer .overlayHover .content {
+    font-family: Viga, sans-serif;
+    font-size: 24px;
+    color: var(--col-max);
+    text-align: center;
+    width: inherit;
+    vertical-align: baseline;
+    margin-top: calc(30%);
+}
+
+.mediaContainer .overlayHover:hover {
+    opacity: 0%;
+    transition: 0.08s;
+}
+
+.contentHeader {
+    padding: 8px;
+}
+
+    .contentHeader .header {
         font-family: Viga, sans-serif;
         background: linear-gradient(135deg, var(--col-dim) 0, var(--col-dimmer) 100%);
         border-radius: 8px;
@@ -340,32 +547,42 @@ li {
         margin-bottom: 8px;
     }
 
-        .pageContent .contentHeader .header .title {
+        .contentHeader .header .title {
             font-size: 32px;
             color: var(--col-max);
         }
 
-        .pageContent .contentHeader .header .subtitle {
+        .contentHeader .header .subtitle {
             font-size: 24px;
             line-height: 24px;
             font-family: Viga, sans-serif;
             color: var(--col-brighter);
         }
 
-        .pageContent .contentHeader .header .content {
+        .contentHeader .header .content {
             padding-top: 8px;
             padding-bottom: 8px;
             font-family: NTR, sans-serif;
             color: var(--col-max);
         }
 
-.contentSection {
+.innerSection {
+    vertical-align: baseline;
+}
+
+.fit {
+    float: left;
     width: calc(100% - 16px);
-    margin: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.contentSection {
+    float: left;
     margin-bottom: 8px;
 }
 
-    .contentSection .header {
+    .contentSection .header, .innerSection .header {
         padding-left: 8px;
         border-left: 4px solid var(--col-max);
         margin-left: 8px;
@@ -373,13 +590,13 @@ li {
         margin-bottom: 8px;
     }
 
-        .contentSection .header .title {
+        .contentSection .header .title, .innerSection .header .title {
             font-family: Viga, sans-serif;
             font-size: 24px;
             color: var(--col-max);
         }
 
-        .contentSection .header .content {
+        .contentSection .header .content, .innerSection .header .content {
             font-family: NTR, sans-serif;
             vertical-align: top;
             line-height: 24px;
@@ -387,13 +604,15 @@ li {
             color: var(--col-brighter);
         }
 
-    .contentSection .contentBody {
-        padding-left: 8px;
+    .contentSection .contentBody, .innerSection .contentBody {
         background: linear-gradient(135deg, var(--col-dim) 0, var(--col-dimmer) 100%);
         border-radius: 8px;
+        box-sizing: border-box;
+        padding-left: 8px;
+        padding-bottom: 8px;
     }
 
-        .contentSection .contentBody .content {
+        .contentSection .contentBody .content, .innerSection .contentBody .content {
             padding-top: 4px;
             font-size: 18px;
             display: block;
@@ -407,7 +626,6 @@ li {
 
     .contentList li {
         padding-top: 8px;
-        padding-bottom: 8px;
         padding-left: 8px;
     }
 
